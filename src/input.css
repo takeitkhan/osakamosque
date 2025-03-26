@@ -1,1 +1,46 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+:root {
+  --primary-clr: #00401a;
+  --secondary-clr: #6a994e;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #f8f9fa;
+}
+
+p {
+  font-size: 14.5px;
+  color: #555;
+  line-height: 28px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--primary-clr) !important;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  transition: all 600ms ease;
+}
+
+.swiper-button-next {
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  right: 0;
+}
+
+.swiper-button-prev {
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  left: 0;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: var(--secondary-clr) !important;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 18px !important;
+    color: #FFFFFF;
+}
