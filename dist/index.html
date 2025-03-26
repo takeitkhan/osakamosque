@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font  -->
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flaticon.css">
+
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome cdn -->
+
+    <!-- Swiper CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      :root {
+        --primary-clr: #ff9822;
+        --secondary-clr: #5d2b00;
+      }
+
+      /* Custom styles for better text visibility */
+      p {
+        font-size: 14.5px;
+        color: #555;
+        line-height: 28px;
+      }
+      .swiper-button-next{
+        background-color:#ff9822 !important;
+       color: white;
+       cursor: pointer;
+       border-top-left-radius: 100%;
+       border-bottom-left-radius: 100%;
+       padding: 20px;
+        right: 0;
+       transition: all 600ms ease;     ;
+      }
+      .swiper-button-prev{
+        background-color:#ff9822 !important;
+       color: white;
+       cursor: pointer;
+       border-top-right-radius: 100%;
+       border-bottom-right-radius: 100%;
+       padding: 20px;
+        left:0;
+       transition: all 600ms ease;  
+      }
+ 
+
+      .swiper-button-prev:hover{
+        background-color: #5d2b00 !important;
+       color: white;
+       cursor: pointer;
+       padding: 20px;
+       left: 0;
+     
+      }
+      .swiper-button-next:hover{
+        background-color: #5d2b00 !important;
+       color: white;
+       cursor: pointer;
+       padding: 20px;
+       right: 0;
+     
+      }
+    
+      .swiper-button-prev:after,.swiper-button-next:after{
+        font-size: 18px;
+      }
+      
+      body {
+        font-family: "Merriweather", serif;
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <section class="relative w-full h-screen">
+      <!-- top bar -->
+      <div
+        class="absolute top-0 left-0 right-0 h-[50px] flex items-center justify-center text-white text-center z-10"
+      >
+        <div class="flex justify-between container mx-auto">
+          <div class="flex items-center gap-4">
+            <span class="text-[14px]">Follow us:</span>
+            <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="mx-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="mx-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="mx-2"><i class="fab fa-google-plus-g"></i></a>
+            <!-- <a href="#" class="mx-2"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a> -->
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2">
+              <i class="fas fa-phone-alt theme-clr text-[#ff9822] text-[12px]"></i>
+              <span class="text-[12px] hover:text-[#ff9822] transition"
+                >Call us: 123-456-7890</span
+              >
+            </div>
+            <div class="flex gap-2 items-center">
+              <i
+                class="fas fa-envelope theme-clr text-[#ff9822] text-[12px]"
+              ></i>
+              <span class="text-[12px] hover:text-[#ff9822] transition"
+                >Email us: 123@example.com</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- top bar -->
+
+      <!-- Menu -->
+      <div class="absolute bg-[rgba(0,0,0,0.5)] right-0 left-0 top-[50px] h-[120px] z-10">
+        <div class="container h-full mx-auto px-8">
+            <div class="flex h-full justify-between items-center">
+                <div class="logo">
+                    <a href="index.html" title="Logo" itemprop="url">
+                        <img class="h-20" src="/images/logo1.png" alt="logo1.png" itemprop="image">
+                    </a>
+                </div>
+                <div>
+                    <nav>
+                        <ul class="flex gap-10 text-white">
+                            <li><a href="#">Home</a></li>
+    
+                            <!-- Event Menu with Dropdown -->
+                            <li class="relative group">
+                                <a href="/dist/event.html" class="cursor-pointer flex items-center gap-1">
+                                    Event
+                                    <!-- Dropdown Arrow Icon -->
+                                    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                                <!-- Submenu -->
+                                <ul class="absolute left-0 mt-2 bg-white text-black  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 min-w-[180px]">
+                                    <li class="relative group/submenu">
+                                        <a href="#" class=" px-4 py-2 hover:text-[#ff9822] flex items-center justify-between">
+                                            Upcoming Events
+                                            <!-- Right Arrow for Submenu -->
+                                            <svg class="w-4 h-4 transition-transform group-hover/submenu:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </a>
+                                        <!-- Submenu (inside submenu) -->
+                                        <ul class="absolute left-full top-0 ml-2 bg-white text-black  opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 min-w-[180px]">
+                                            <li><a href="#" class="block px-4 py-2 hover:text-[#ff9822]">Conference</a></li>
+                                            <li><a href="#" class="block px-4 py-2 hover:text-[#ff9822]">Workshops</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="block px-4 py-2 hover:text-[#ff9822]">Past Events</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Event Gallery</a></li>
+                                </ul>
+                            </li>
+    
+                            <li><a href="#">Our Courses</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+      <!-- Menu -->
+  
+      <!-- Swiper Container -->
+      <div class="swiper mySwiper w-full h-full">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+
+          <div class="swiper-slide relative">
+            <img
+              src="/images/slide-4.jpg"
+              class="w-full h-full object-cover"
+              alt="Slide 1"
+            />
+            <div
+              class="absolute inset-0   flex flex-col items-center justify-center text-white text-center p-6"
+            >
+              <div
+                class="lg:max-w-[50%] w-full flex items-center justify-center flex-col gap-4"
+              >
+                <img src="/images//bsml-txt.png" alt="" />
+
+                <h1>
+                  <img src="/images/ayat-txt.png" alt="" />
+                </h1>
+                <h3 class="text-[35px]">
+                  He Raised the Sky and Set Up the Balance
+                </h3>
+                <img src="/images/pshape.png" alt="" />
+                <span class="text-[18px] font-semibold"
+                  >(Surah Al-Rahmaan Verse 7)</span
+                >
+
+                <a
+                  href="#"
+                  class="mt-6 py-[14px] px-[45px] text-[15px] font-bold bg-[#ff9822] hover:bg-[#5d2b00] rounded-md transition"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative">
+            <img
+              src="/images/slide-4.jpg"
+              class="w-full h-full object-cover"
+              alt="Slide 1"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-6"
+            >
+              <div
+                class="lg:max-w-[50%] w-full flex items-center justify-center flex-col gap-4"
+              >
+                <img src="/images//bsml-txt.png" alt="" />
+
+                <h1>
+                  <img src="/images/ayat-txt.png" alt="" />
+                </h1>
+                <h3 class="text-[35px]">
+                  He Raised the Sky and Set Up the Balance
+                </h3>
+                <img src="/images/pshape.png" alt="" />
+                <span class="text-[18px] font-semibold"
+                  >(Surah Al-Rahmaan Verse 7)</span
+                >
+
+                <a
+                  href="#"
+                  class="mt-6 py-[14px] px-[45px] text-[15px] font-bold bg-[#ff9822] hover:bg-[#5d2b00] rounded-md transition"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative">
+            <img
+              src="/images/slide-4.jpg"
+              class="w-full h-full object-cover"
+              alt="Slide 1"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-6"
+            >
+              <div
+                class="lg:max-w-[50%] w-full flex items-center justify-center flex-col gap-4"
+              >
+                <img src="/images//bsml-txt.png" alt="" />
+
+                <h1>
+                  <img src="/images/ayat-txt.png" alt="" />
+                </h1>
+                <h3 class="text-[35px]">
+                  He Raised the Sky and Set Up the Balance
+                </h3>
+                <img src="/images/pshape.png" alt="" />
+                <span class="text-[18px] font-semibold"
+                  >(Surah Al-Rahmaan Verse 7)</span
+                >
+
+                <a
+                  href="#"
+                  class="mt-6 py-[14px] px-[45px] text-[15px] font-bold bg-[#ff9822] hover:bg-[#5d2b00] rounded-md transition"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relative">
+            <img
+              src="/images/slide-4.jpg"
+              class="w-full h-full object-cover"
+              alt="Slide 1"
+            />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-6"
+            >
+              <div
+                class="lg:max-w-[50%] w-full flex items-center justify-center flex-col gap-4"
+              >
+                <img src="/images//bsml-txt.png" alt="" />
+
+                <h1>
+                  <img src="/images/ayat-txt.png" alt="" />
+                </h1>
+                <h3 class="text-[35px]">
+                  He Raised the Sky and Set Up the Balance
+                </h3>
+                <img src="/images/pshape.png" alt="" />
+                <span class="text-[18px] font-semibold"
+                  >(Surah Al-Rahmaan Verse 7)</span
+                >
+
+                <a
+                  href="#"
+                  class="mt-6 py-[14px] px-[45px] text-[15px] font-bold bg-[#ff9822] hover:bg-[#5d2b00] rounded-md transition"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper Pagination & Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next text-white"></div>
+        <div class="swiper-button-prev text-white"></div>
+      </div>
+    </section>
+
+    <section>
+      <!-- About Section -->
+      <div class="pt-[100px]">
+        <div class="container mx-auto px-8 lg:px-12">
+          <div
+            class="flex flex-col md:flex-row lg:flex-row items-center lg:gap-20 mx-auto lg:px-5"
+          >
+            <div class="w-full">
+              <div
+                class="relative inset-0 lg:h-[390px] lg:w-[510px] h-full w-full"
+              >
+                <div
+                  class="absolute lg:block hidden  border-[10px] border-[#ff9822] rounded-md inset-0 ]"
+                ></div>
+                <div
+                  class="lg:absolute lg:h-[390px] lg:w-[510px] h-full left-8 bottom-8 w-full"
+                >
+                  <img
+                    class="w-full rounded-md object-cover"
+                    src="/images//abt-img2.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col mt-6 lg:mt-0">
+              <h1 class="text-[20px] font-bold text-[#ff9822]">Our History</h1>
+              <div>
+                <h2  class="text-[48px] text-[#222] font-[500]">
+                  About Islamic Center
+                </h2>
+                <img class="mt-2" src="/images//pshape.png" alt="" />
+            </div >
+              <p class="mt-4">
+                We established our center in 1954, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris .Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                Visit our premises sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="mt-6">
+                <a
+                  href="#"
+                  class="py-[14px]  text-white px-[45px] text-[15px] font-bold bg-[#ff9822] hover:bg-[#5d2b00] rounded-md transition"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- country section -->
+    <section class="pt-[100px]">
+        <div class="container mx-auto px-8">
+          <!-- Header -->
+          <div class="text-start">
+            <span class="text-[20px] font-bold text-[#ff9822]">Select Country & City For</span>
+            <h2 class="text-[36px] lg:text-[48px] text-[#222] font-semibold">Prayer Time</h2>
+           
+              <img  class="mt-2" src="/images/pshape.png" alt="Design Shape" />
+          
+          </div>
+      
+          <!-- Grid Layout -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+            <!-- Left Section: Image -->
+            <div>
+              <img class="w-full h-full object-cover rounded-lg" src="/images/prayer-time-mockp.png" alt="Prayer Time Image" />
+            </div>
+      
+            <!-- Right Section: Selectors & Table -->
+            <div>
+              <!-- Select Options -->
+              <div class="flex flex-wrap gap-4 mb-6 lg:justify-end justify-center">
+                <select name="country" class=" bg-[#ff9822] text-white text-[14px] px-4 py-2 rounded-md focus:outline-none">
+                  <option value="" class="text-black bg-white">Select Country</option>
+                  <option value="USA" class="text-black bg-white">USA</option>
+                  <option value="UK" class="text-black bg-white">UK</option>
+                  <option value="Canada" class="text-black bg-white">Canada</option>
+                  <option value="Germany" class="text-black bg-white">Germany</option>
+                </select>
+              
+                <select name="Location" class=" bg-[#ff9822] text-white text-[14px] px-4 py-2 rounded-md focus:outline-none">
+                  <option value="" class="text-black bg-white">Select Location</option>
+                  <option value="New York" class="text-black bg-white">New York</option>
+                  <option value="London" class="text-black bg-white">London</option>
+                  <option value="Toronto" class="text-black bg-white">Toronto</option>
+                  <option value="Berlin" class="text-black bg-white">Berlin</option>
+                </select>
+              </div>
+              
+              
+      
+              <!-- Table Section -->
+              <div class="overflow-x-auto">
+                <h4 class="text-[13px]">Showing Results: Namaz Timings of Select Location</h4>
+                <table class="w-full border-collapse rounded-lg ">
+                  <thead>
+                    <tr class=" text-[]">
+                      <th class="p-[10px] text-[18px] text-center text-[20px]">
+                        Name of Salat
+                        <div>            <img class="mt-2" src="/images/pshape.png" alt="Design Shape" /></div>
+                    </th>
+                      <th class="p-[10px] text-[18px] text-center text-[20px]"> Azan Time
+                        <div>            <img class="mt-2" src="/images/pshape.png" alt="Design Shape" /></div></th>
+                      <th class="p-[10px] text-[18px] text-center text-[20px]"> Prayer Time
+                        <div>            <img class="mt-2" src="/images/pshape.png" alt="Design Shape" /></div></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class=" text-center hover:text-[#ff9822] transition">
+                      <td class="p-[10px] text-[18px]">Fajr</td>
+                      <td class="p-[10px] text-[18px]">Sheikh Sudais</td>
+                      <td class="p-[10px] text-[18px]">2024</td>
+                    </tr>
+                    <tr class=" text-center hover:text-[#ff9822] transition">
+                      <td class="p-[10px] text-[18px]">Dhuhr</td>
+                      <td class="p-[10px] text-[18px]">Imam Khalid</td>
+                      <td class="p-[10px] text-[18px]">2024</td>
+                    </tr>
+                    <tr class=" text-center hover:text-[#ff9822] transition">
+                      <td class="p-[10px] text-[18px]">Asr</td>
+                      <td class="p-[10px] text-[18px]">Imam Abu Bakr</td>
+                      <td class="p-[10px] text-[18px]">2024</td>
+                    </tr>
+                    <tr class=" text-center hover:text-[#ff9822] transition">
+                      <td class="p-[10px] text-[18px]">Maghrib</td>
+                      <td class="p-[10px] text-[18px]">Sheikh Shuraim</td>
+                      <td class="p-[10px] text-[18px]">2024</td>
+                    </tr>
+                    <tr class=" text-center hover:text-[#ff9822] transition">
+                      <td class="p-[10px] text-[18px]">Isha</td>
+                      <td class="p-[10px] text-[18px]">Imam Yasir</td>
+                      <td class="p-[10px] text-[18px]">2024</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!-- country section -->
+
+
+    <!-- offer section -->
+    <section class="pt-[100px]">
+      <div class="container mx-auto px-8">
+        <div class="flex flex-col items-center">
+            <span class="text-[20px] font-bold text-[#ff9822]">Our Worldwide</span>
+            <h2 class="text-[36px] lg:text-[48px] text-[#222] font-semibold ">Offered Services</h2>
+            <img class="mt-2" src="/images/pshape.png" alt="Design Shape" />
+          </div>
+        <div class="grid lg:grid-cols-4 gap-8 md:grid-cols-2 sm:grid-cols-2 mt-6 grid-cols-1">
+            <div class="flex items-center flex-col gap-4 group ">
+                <div class="text-center">
+                    <i class="fa-solid group-hover:text-[#5d2b00] transition fa-book-open text-[80px] text-[#ff9822]"></i>
+                    <h5 class="text-[18px] mt-4 text-[#222] font-[500]">
+                        <a href="#">Quran Learning</a>
+                    </h5>
+                </div>
+              <div class="relative mt-4">
+                <div class="absolute right-0 left h-[40px] bg-[#ff9822] z-[-100px] rounded-lg top-[-6px] group-hover:bg-[#5d2b00] inset-0 -rotate-4 duration-600">
+
+                </div>
+               <div class=" group-hover:static relative">
+                <p
+                class="bg-[#ff9822]  group-hover:bg-[#5d2b00] transition text-white inset-0 p-4 rounded-md mt-4"
+                >
+                <span class="text-white ">Quran Teaching sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</span>
+
+                </p>
+               </div>
+              </div>
+            </div>
+            <div class="flex items-center flex-col gap-4 group ">
+                <div class="text-center">
+                    <i class="fa-solid group-hover:text-[#5d2b00] transition fa-book-open text-[80px] text-[#ff9822]"></i>
+                    <h5 class="text-[18px] mt-4 text-[#222] font-[500]">
+                        <a href="#">Quran Learning</a>
+                    </h5>
+                </div>
+              <div class="relative mt-4">
+                <div class="absolute right-0 left h-[40px] bg-[#ff9822] z-[-100px] rounded-lg top-[-6px] group-hover:bg-[#5d2b00] inset-0 -rotate-4 duration-600">
+
+                </div>
+               <div class=" group-hover:static relative">
+                <p
+                class="bg-[#ff9822]  group-hover:bg-[#5d2b00] transition text-white inset-0 p-4 rounded-md mt-4"
+                >
+                <span class="text-white ">Quran Teaching sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</span>
+
+                </p>
+               </div>
+              </div>
+            </div>
+            <div class="flex items-center flex-col gap-4 group ">
+                <div class="text-center">
+                    <i class="fa-solid group-hover:text-[#5d2b00] transition fa-book-open text-[80px] text-[#ff9822]"></i>
+                    <h5 class="text-[18px] mt-4 text-[#222] font-[500]">
+                        <a href="#">Quran Learning</a>
+                    </h5>
+                </div>
+              <div class="relative mt-4">
+                <div class="absolute right-0 left h-[40px] bg-[#ff9822] z-[-100px] rounded-lg top-[-6px] group-hover:bg-[#5d2b00] inset-0 -rotate-4 duration-600">
+
+                </div>
+               <div class=" group-hover:static relative">
+                <p
+                class="bg-[#ff9822]  group-hover:bg-[#5d2b00] transition text-white inset-0 p-4 rounded-md mt-4"
+                >
+                <span class="text-white ">Quran Teaching sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</span>
+
+                </p>
+               </div>
+              </div>
+            </div>
+            <div class="flex items-center flex-col gap-4 group ">
+                <div class="text-center">
+                    <i class="fa-solid group-hover:text-[#5d2b00] transition fa-book-open text-[80px] text-[#ff9822]"></i>
+                    <h5 class="text-[18px] mt-4 text-[#222] font-[500]">
+                        <a href="#">Quran Learning</a>
+                    </h5>
+                </div>
+              <div class="relative mt-4">
+                <div class="absolute right-0 left h-[40px] bg-[#ff9822] z-[-100px] rounded-lg top-[-6px] group-hover:bg-[#5d2b00] inset-0 -rotate-4 duration-600">
+
+                </div>
+               <div class=" group-hover:static relative">
+                <p
+                class="bg-[#ff9822]  group-hover:bg-[#5d2b00] transition text-white inset-0 p-4 rounded-md mt-4"
+                >
+                <span class="text-white ">Quran Teaching sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</span>
+
+                </p>
+               </div>
+              </div>
+            </div>
+           
+           
+        </div>
+</div>
+    </section>
+
+    <!-- pillar section -->
+    <section class="pt-[100px]" style>
+        <div style="background-image: url(/images/parallax2.jpg); background-size: cover; background-position: center; background-attachment: fixed;" class="py-20 bg-cover bg-center bg-fixed bg-no-repeat relative">
+            <div class="absolute inset-0 bg-black opacity-70"></div> <!-- Background overlay with less opacity -->
+          
+            <div class="container mx-auto px-8 relative z-10">
+              <div class="flex flex-col items-center">
+                <span class="text-[20px] font-bold text-[#ff9822]">About Essential</span>
+                <h2 class="text-[36px] lg:text-[48px] text-white font-semibold ">Pillar Of Islam</h2>
+                <img class="mt-2" src="/images/pshape.png" alt="Design Shape" />
+              </div>
+              
+              <div class="grid lg:grid-cols-5 gap-8 md:grid-cols-2 grid-cols-2 mt-8">
+                <div class="flex items-center flex-col gap-4 group">
+                  <div class="text-center">
+                    <i class="fa-solid fa-circle-user text-white p-12 rounded-full text-[70px] bg-[#804707]  border-2 border-white"></i>
+                    <h5 class="text-[24px] mt-4  text-white font-[400]">Shahada</h5>
+                    <span class="text-[18px] text-[#ff9822]">(Faith)</span>
+                  </div>
+                </div>
+                <div class="flex items-center flex-col gap-4 group">
+                  <div class="text-center">
+                    <i class="fa-solid fa-circle-user text-white p-12 rounded-full text-[70px] bg-[#804707]  border-2 border-white"></i>
+                    <h5 class="text-[24px] mt-4  text-white font-[400]">Shahada</h5>
+                    <span class="text-[18px] text-[#ff9822]">(Faith)</span>
+                  </div>
+                </div>
+                <div class="flex items-center flex-col gap-4 group">
+                  <div class="text-center">
+                    <i class="fa-solid fa-circle-user text-white p-12 rounded-full text-[70px] bg-[#804707]  border-2 border-white"></i>
+                    <h5 class="text-[24px] mt-4  text-white font-[400]">Shahada</h5>
+                    <span class="text-[18px] text-[#ff9822]">(Faith)</span>
+                  </div>
+                </div>
+                <div class="flex items-center flex-col gap-4 group">
+                  <div class="text-center">
+                    <i class="fa-solid fa-circle-user text-white p-12 rounded-full text-[70px] bg-[#804707]  border-2 border-white"></i>
+                    <h5 class="text-[24px] mt-4  text-white font-[400]">Shahada</h5>
+                    <span class="text-[18px] text-[#ff9822]">(Faith)</span>
+                  </div>
+                </div>
+                <div class="flex items-center flex-col gap-4 group">
+                  <div class="text-center">
+                    <i class="fa-solid fa-circle-user text-white p-12 rounded-full text-[70px] bg-[#804707]  border-2 border-white"></i>
+                    <h5 class="text-[24px] mt-4  text-white font-[400]">Shahada</h5>
+                    <span class="text-[18px] text-[#ff9822]">(Faith)</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          
+      </section>
+    <!-- pillar section -->
+    <!-- offer section -->
+
+    <!-- our blog section -->
+    <section class="pt-[100px]">
+       <!-- Background overlay with reduced opacity -->
+
+        <div class="container mx-auto px-8">
+          <div class="text-center mb-12">
+            <span class="text-[20px] font-bold text-[#ff9822]">Our Blog</span>
+            <h2 class="text-[36px] lg:text-[48px] text-[#222] font-semibold ">Latest Articles</h2>
+            <img class="mx-auto mt-2" src="/images/pshape.png" alt="Design Shape" />
+          </div>
+      
+          <div class="grid lg:grid-cols-5 gap-8 md:grid-cols-2 grid-cols-1">
+            <!-- Left Column (Larger) -->
+            <div class="lg:col-span-3 col-span-1">
+              <div class="bg-white mb-4 flex group rounded-lg duration-600 ">
+                <div class="lg:w-[300px] overflow-hidden w-full">
+                    <img class="w-full h-full group-hover:scale-125 duration-600 object-cover" src="/images/post-img1-1.jpg" alt="Blog Image">
+                </div>
+                <div>
+                    <div class="flex flex-col gap-3 p-4">
+                        <h5 itemprop=" ">
+                            <a class="text-[20px] hover:text-[#ff9822] transition text-[#222]" href="blog-detail.html">Is Islam a Liberal Philosophy?</a>
+                        </h5>
+                        <ul class="text-[12px] text-[#666] flex items-center gap-3">
+                            <li><i class="far text-[#ff9822] fa-calendar-alt theme-clr"></i> Nov 17, 2023</li>
+                            <li><i class="far fa-user text-[#ff9822] theme-clr"></i><a href="#" title="" itemprop="url">William Blake</a></li>
+                        </ul>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, conec tetur adipisicing elit sed do eiusd.</p>
+                        <a href="blog-detail.html" class="text-[#555] font-[400] text-[15px] hover:text-[#ff9822]"  >View Details</a>
+                    </div>
+                </div>
+              </div>
+              <div class="bg-white mb-4 flex group rounded-lg duration-600 ">
+                <div class="lg:w-[300px] overflow-hidden w-full">
+                    <img class="w-full h-full group-hover:scale-125 duration-600 object-cover" src="/images/post-img1-1.jpg" alt="Blog Image">
+                </div>
+                <div>
+                    <div class="flex flex-col gap-3 p-4">
+                        <h5 itemprop=" ">
+                            <a class="text-[20px] hover:text-[#ff9822] transition text-[#222]" href="blog-detail.html">Is Islam a Liberal Philosophy?</a>
+                        </h5>
+                        <ul class="text-[12px] text-[#666] flex items-center gap-3">
+                            <li><i class="far text-[#ff9822] fa-calendar-alt theme-clr"></i> Nov 17, 2023</li>
+                            <li><i class="far fa-user text-[#ff9822] theme-clr"></i><a href="#" title="" itemprop="url">William Blake</a></li>
+                        </ul>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, conec tetur adipisicing elit sed do eiusd.</p>
+                        <a href="blog-detail.html" class="text-[#555] font-[400] text-[15px] hover:text-[#ff9822]"  >View Details</a>
+                    </div>
+                </div>
+              </div>
+             
+            </div>
+      
+            <!-- Right Column -->
+            <div class="lg:col-span-2  col-span-1">
+             <div>
+              <div class="relative group mb-4 bg-white rounded-md w-full">
+                <div class="relative  p-6  hover:bg-black rounded-lg  overflow-hidden transition-all duration-300">
+                    <!-- Background Image with Stronger Black Overlay on Hover -->
+                    <div class="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-70 group-hover:bg-black transition-opacity duration-300" 
+                         style="background-image: url(/images/event-img1-1.jpg); background-color: rgba(0, 0, 0, 0.8);">
+                        </div>
+                       
+    
+                    <!-- Content (Changes Color on Hover) -->
+                    <div class="relative z-10 transition-all duration-300 flex items-center gap-4">
+                        <div class="flex flex-col">
+                            <span class="font-[700] text-[50px] text-[#ff9822] ">17 
+                                
+                            </span>
+                            <i class="text-[18px] ">May</i>
+                        </div>
+                        <div>
+                            <h5 class="mt-2">
+                                <a class="text-[18px] text-gray-900 font-semibold group-hover:text-white hover:text-[#ff9822] transition-colors duration-300" 
+                                   href="event-detail.html">
+                                    Importance Of Prayer In Islam
+                                </a>
+                            </h5>
+                            <ul class="pst-mta mt-2 text-gray-600 group-hover:text-white transition-colors duration-300 text-[12px] flex gap-3">
+                                <li><i class="fas mr-1 fa-map-marker-alt theme-clr text-[#ff9822]"></i> Dehli, Jamia Mosque</li>
+                                <li><i class="far text-[#ff9822] mr-1 fa-clock theme-clr"></i> 04:00 pm - 08:00 pm</li>
+                            </ul>
+                            <a href="event-detail.html" class="inline-block mt-4 text-[#555] hover:text-[#ff9822] group-hover:text-white text-[14px] transition-colors duration-300">
+                                Event Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <div class="relative group mb-4 bg-white rounded-md w-full">
+                <div class="relative  p-6  hover:bg-black rounded-lg  overflow-hidden transition-all duration-300">
+                    <!-- Background Image with Stronger Black Overlay on Hover -->
+                    <div class="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-70 group-hover:bg-black transition-opacity duration-300" 
+                         style="background-image: url(/images/event-img1-1.jpg); background-color: rgba(0, 0, 0, 0.8);">
+                        </div>
+                       
+    
+                    <!-- Content (Changes Color on Hover) -->
+                    <div class="relative z-10 transition-all duration-300 flex items-center gap-4">
+                        <div class="flex flex-col">
+                            <span class="font-[700] text-[50px] text-[#ff9822] ">17 
+                                
+                            </span>
+                            <i class="text-[18px] ">May</i>
+                        </div>
+                        <div>
+                            <h5 class="mt-2">
+                                <a class="text-[18px] text-gray-900 font-semibold group-hover:text-white hover:text-[#ff9822] transition-colors duration-300" 
+                                   href="event-detail.html">
+                                    Importance Of Prayer In Islam
+                                </a>
+                            </h5>
+                            <ul class="pst-mta mt-2 text-gray-600 group-hover:text-white transition-colors duration-300 text-[12px] flex gap-3">
+                                <li><i class="fas mr-1 fa-map-marker-alt theme-clr text-[#ff9822]"></i> Dehli, Jamia Mosque</li>
+                                <li><i class="far text-[#ff9822] mr-1 fa-clock theme-clr"></i> 04:00 pm - 08:00 pm</li>
+                            </ul>
+                            <a href="event-detail.html" class="inline-block mt-4 text-[#555] hover:text-[#ff9822] group-hover:text-white text-[14px] transition-colors duration-300">
+                                Event Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+            
+                
+                
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Donation section -->
+      <section class="pt-[100px] relative">
+        <div class="relative bg-cover bg-center bg-fixed bg-no-repeat"
+            style="background-image: url(/images/parallax3.jpg);">
+            <!-- Overlay Effect -->
+            <div class="absolute inset-0 bg-[#f8f9fa] opacity-80"></div>
+    
+            <div class=" grid grid-cols-1 md:grid-cols-2  gap-8 items-center">
+
+                <!-- Left: Full-width Image Slider -->
+           <!-- Left: Full-width Image Slider -->
+
+
+           
+<div class="relative w-full h-full">
+<div class="swiper mySwiper w-full h-full">
+<div class="swiper-wrapper rounded-none">
+<div class="swiper-slide rounded-none">
+   <img src="/images/car-img1-2.jpg" alt="Slide 1" class="w-full h-full object-cover">
+</div>
+<div class="swiper-slide">
+   <img src="/images/car-img1-2.jpg" alt="Slide 2" class="w-full h-full object-cover">
+</div>
+<div class="swiper-slide">
+   <img src="/images/car-img1-2.jpg" alt="Slide 3" class="w-full h-full object-cover">
+</div>
+</div>
+
+<div class="swiper-button-prev text-white"></div>
+<div class="swiper-button-next text-white"></div>
+</div>
+</div>
+
+<!-- <div class="relative"><img src="/images/car-img1-2.jpg"
+  class="h-full w-full object-cover rounded-none"
+  alt=""></div> -->
+                <!-- Donation Form -->
+    
+                <!-- Right: Text Content -->
+                <div class=" container mx-auto px-8 z-10 py-10 text-white">
+                    <span class="text-[20px] font-bold text-[#ff9822]">Give Food & Shelter To Poor</span>
+                    <h2 class="text-[36px] lg:text-[48px] font-semibold text-[#222] mt-2">Make Your Donation</h2>
+                    <img class="mt-4" src="/images/pshape.png" alt="Design Shape" />
+    
+                    <!-- Donation Buttons -->
+                    <div class="flex mt-4 flex-wrap gap-4">
+                        <a class="font-[700] text-[18px] px-[30px] border border-[#ddd] text-[#222] rounded-full hover:text-white hover:bg-[#ff9822] duration-500 py-[8px]"
+                            href="#">$100</a>
+                        <a class="font-[700] text-[18px] px-[30px] border border-[#ddd] text-[#222] rounded-full hover:text-white hover:bg-[#ff9822] duration-500 py-[8px]"
+                            href="#">$200</a>
+                        <a class="font-[700] text-[18px] px-[30px] border border-[#ddd] text-[#222] rounded-full hover:text-white hover:bg-[#ff9822] duration-500 py-[8px]"
+                            href="#">$300</a>
+                        <a class="font-[700] text-[18px] px-[30px] border border-[#ddd] text-[#222] rounded-full hover:text-white hover:bg-[#ff9822] duration-500 py-[8px]"
+                            href="#">Other</a>
+                    </div>
+    
+                    <!-- Input Fields -->
+                    <div>
+                        <div class='flex gap-4 mt-6'>
+                            <input type="text" placeholder="Enter your name"
+                                class="w-full py-2 px-4 border border-gray-300 text-[#222] rounded-lg focus:outline-none text-[14px] transition-all duration-300">
+                            <input type="text" placeholder="Enter your email"
+                                class="w-full border text-[#222] py-2 px-4 border-gray-300 rounded-lg focus:outline-none text-[14px] transition-all duration-300">
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                            <input type="text" placeholder="Donation Amount"
+                                class="w-full py-2 px-4 text-[#222] border border-gray-300 rounded-lg focus:outline-none text-[14px] transition-all duration-300">
+                            <input type="text" placeholder="Message"
+                                class="w-full py-2 px-4 border text-[#222] border-gray-300 rounded-lg focus:outline-none text-[14px] transition-all duration-300">
+                        </div>
+                    </div>
+    
+                    <!-- Progress Bar -->
+                    <div class="mt-4">
+                        <h5 class="text-[24px] font-[400] text-[#222]">Raised Funds for the Poor</h5>
+                        <div class="w-full mt-4 bg-gray-200 rounded-full h-4 overflow-hidden relative">
+                            <div id="progressBar"
+                                class="bg-[#ff9822] h-full text-xs font-medium text-white text-end leading-4 rounded-full transition-all duration-500"
+                                style="width: 70%;">
+                                <span class="relative bg-[#ff9822] text-white rounded-md">70%</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Raised & Goal Amount -->
+                    <div class="flex mt-4 gap-8 text-[16px]">
+                        <div class="flex gap-2">
+                            <span class="text-[#222]">Raised:</span>
+                            <span class="text-[#ff9822]">$400.00</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-[#222]">Goal:</span>
+                            <span class="text-[#ff9822]">$650.00</span>
+                        </div>
+                    </div>
+    
+                    <!-- Donate Button -->
+                    <div class="block mt-6">
+                        <a href="#"
+                            class="py-[14px] px-[45px] text-[15px] text-white font-bold bg-[#ff9822] hover:bg-[#5d2b00] rounded-md transition">
+                            Donate Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+      
+      <!-- Donation section -->
+      
+    <!-- our blog section -->
+
+    <!-- expert section -->
+    <section class="pt-[100px]">
+      <!-- Background overlay with reduced opacity -->
+
+       <div class="container mx-auto px-8">
+         <div class="text-center mb-12">
+           <span class="text-[20px] font-bold text-[#ff9822]">Our Expert</span>
+           <h2 class="text-[36px] lg:text-[48px] text-[#222] font-semibold mt-2">Islamic Scholars</h2>
+           <img class="mx-auto mt-4" src="/images/pshape.png" alt="Design Shape" />
+         </div>
+     
+         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+           <!--  Column (Larger) -->
+           <div class="group relative mb-20 lg:mb-0">
+            <!-- Member Image with Overlay -->
+            <div class="relative rounded-lg group-hover:inset-0  group-hover:bg-black">
+              <div class="absolute inset-0 group-hover:bg-black group-hover:opacity-50 duration-500 rounded-md"></div>
+                <img src="/images/team-img1-1.jpg" alt="Member" class="w-full  h-auto rounded-lg ">
+            </div>
+        
+            <!-- Member Info (Always Visible) -->
+            <div class="absolute mt-[-70px] max-w-[90%] w-[100%] flex items-center justify-center text-center gap-3 flex-col group-hover:text-white group-hover:bg-[#ff9822] mx-auto ml-[5%] bg-white duration-500 text-[#222] p-4 rounded-b-lg">
+              <div class="flex gap-3 group-hover:text-black text-black items-center">
+                <!-- fb icon -->
+                <i class="fab fa-facebook-f text-[14px]"></i>
+                <!-- twitter icon -->
+                <i class="fab fa-twitter text-[14px] "></i>
+                <!-- linkedin icon -->
+                 <i class="fab fa-linkedin-in text-[14px] "></i>
+                 <!-- google plus icon -->
+                  <i class="fab fa-google-plus-g text-[14px] "></i>
+
+              </div>
+                <h3 class="text-[18px] font-bold">Sharuf Al Hamman</h3>
+
+                <div class=" bg-[#ff9822] group-hover:bg-white h-[2px] w-[100px] mx-auto">
+
+                </div>
+
+                <p class=""><span class="group-hover:text-white">Islamic Scholar</span></p>
+            </div>
+        </div>
+           <div class="group relative mb-20 lg:mb-0">
+            <!-- Member Image with Overlay -->
+            <div class="relative rounded-lg group-hover:inset-0  group-hover:bg-black">
+              <div class="absolute inset-0 group-hover:bg-black group-hover:opacity-50 duration-500 rounded-md"></div>
+                <img src="/images/team-img1-1.jpg" alt="Member" class="w-full  h-auto rounded-lg ">
+            </div>
+        
+            <!-- Member Info (Always Visible) -->
+            <div class="absolute mt-[-70px] max-w-[90%] w-[100%] flex items-center justify-center text-center gap-3 flex-col group-hover:text-white group-hover:bg-[#ff9822] mx-auto ml-[5%] bg-white duration-500 text-[#222] p-4 rounded-b-lg">
+              <div class="flex gap-3 group-hover:text-black text-black items-center">
+                <!-- fb icon -->
+                <i class="fab fa-facebook-f text-[14px]"></i>
+                <!-- twitter icon -->
+                <i class="fab fa-twitter text-[14px] "></i>
+                <!-- linkedin icon -->
+                 <i class="fab fa-linkedin-in text-[14px] "></i>
+                 <!-- google plus icon -->
+                  <i class="fab fa-google-plus-g text-[14px] "></i>
+
+              </div>
+                <h3 class="text-[18px] font-bold">Sharuf Al Hamman</h3>
+
+                <div class=" bg-[#ff9822] group-hover:bg-white h-[2px] w-[100px] mx-auto">
+
+                </div>
+
+                <p class=""><span class="group-hover:text-white">Islamic Scholar</span></p>
+            </div>
+        </div>
+           <div class="group relative mb-20 lg:mb-0">
+            <!-- Member Image with Overlay -->
+            <div class="relative rounded-lg group-hover:inset-0  group-hover:bg-black">
+              <div class="absolute inset-0 group-hover:bg-black group-hover:opacity-50 duration-500 rounded-md"></div>
+                <img src="/images/team-img1-1.jpg" alt="Member" class="w-full  h-auto rounded-lg ">
+            </div>
+        
+            <!-- Member Info (Always Visible) -->
+            <div class="absolute mt-[-70px] max-w-[90%] w-[100%] flex items-center justify-center text-center gap-3 flex-col group-hover:text-white group-hover:bg-[#ff9822] mx-auto ml-[5%] bg-white duration-500 text-[#222] p-4 rounded-b-lg">
+              <div class="flex gap-3 group-hover:text-black text-black items-center">
+                <!-- fb icon -->
+                <i class="fab fa-facebook-f text-[14px]"></i>
+                <!-- twitter icon -->
+                <i class="fab fa-twitter text-[14px] "></i>
+                <!-- linkedin icon -->
+                 <i class="fab fa-linkedin-in text-[14px] "></i>
+                 <!-- google plus icon -->
+                  <i class="fab fa-google-plus-g text-[14px] "></i>
+
+              </div>
+                <h3 class="text-[18px] font-bold">Sharuf Al Hamman</h3>
+
+                <div class=" bg-[#ff9822] group-hover:bg-white h-[2px] w-[100px] mx-auto">
+
+                </div>
+
+                <p class=""><span class="group-hover:text-white">Islamic Scholar</span></p>
+            </div>
+        </div>
+
+       </div>
+       <div class="flex items-center justify-center mt-8 lg:mt-32">
+        <a
+        href="#"
+        class="  py-[14px] px-[45px] text-[15px] text-white font-bold bg-[#ff9822] hover:bg-[#5d2b00] rounded-md transition"
+        >View More</a
+      >
+      </div>
+       </div>
+     </section>
+    <!-- expert section -->
+
+
+    <!-- footer section -->
+    <section >
+        <footer  class="pt-[30rem] md:pt-[100px] lg:pt-0">
+          <div class="w-full h-full bg-[#f8f9fa]">
+            <img src="/images/bg-vector.png" alt="">
+            <div>
+              <div class=" py-[270px]  pb-[50px] relative bg-[#ff9822]">
+                <div class="container mx-auto    bottom-0 absolute lg:-top-44 right-0 left-0 px-4">
+                  <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 py-10 px-8 rounded-lg  bg-white gap-8">
+                    
+                    <!-- About Us Section -->
+                    <div>
+                      <h2 class="text-xl font-semibold mb-4">About Us</h2>
+                      <p class="text-gray-600  mb-4">
+                       <span class="text-[13px] text-[#555]"> Lorem ipsum dolor sit amet, conec tetur adipisicing elit, sed do eiusd tempor incididunt ut labore dolore magna aliqua tempor.</span>
+                      </p>
+                      <div class="w-full h-24">
+                        <iframe
+                          class="w-full h-full rounded-lg"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902120515761!2d90.390242!3d23.750885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b89d043ca9a1%3A0xf0b57c0cf735b75e!2sDhaka!5e0!3m2!1sen!2sbd!4v1614853909120!5m2!1sen!2sbd"
+                          allowfullscreen=""
+                          loading="lazy"
+                        ></iframe>
+                      </div>
+                    </div>
+              
+                    <!-- Latest Blogs Section -->
+                    <div>
+                      <h2 class="text-xl font-semibold mb-4">Latest Blogs</h2>
+                      <div class="flex p-4 rounded-lg gap-3">
+                       <div>
+                        <img src="/images/rcnt-img1.jpg" alt="Blog Image" class="w-full h-16  object-cover rounded-md">
+                       </div>
+                       <div>
+                        <h3 class="text-[14px] font-[400] hover-[#ff9822] mt-2">Help the poor people</h3>
+                        <p><span class="text-[12px] text-[#ff9822]"> <i class="far fa-calendar-alt mr-1"></i> March 25, 2025</span></p>
+                       </div>
+                      </div>
+                    </div>
+              
+                    <!-- Contact Info Section -->
+                    <div>
+                      <h2 class="text-xl font-semibold mb-4">Contact Info</h2>
+                     <div >
+                      <p class=" border-b py-2 border-dashed border-[#ddd]"><strong class="text-[12px] text-[#ddd]"><i class="far fa-envelope mr-2 text-[#ff9822] theme-clr"></i></strong> info@example.com</p>
+               
+                      <p class=" border-b py-2 border-dashed border-[#ddd]"><strong class="text-[12px] text-[#ddd]"><i class="far fa-envelope mr-2 text-[#ff9822] theme-clr"></i></strong> info@example.com</p>
+               
+                      <p class=" border-b py-2 border-dashed border-[#ddd]"><strong class="text-[12px] text-[#ddd]"><i class="far fa-envelope mr-2 text-[#ff9822] theme-clr"></i></strong> info@example.com</p>
+                     </div>
+
+                     <div class="flex gap-6 pt-6 text-[#222] items-center">
+                      <!-- fb icon -->
+                      <i class="fab fa-facebook-f text-[14px]"></i>
+                      <!-- twitter icon -->
+                      <i class="fab fa-twitter text-[14px] "></i>
+                      <!-- linkedin icon -->
+                       <i class="fab fa-linkedin-in text-[14px] "></i>
+                       <!-- google plus icon -->
+                        <i class="fab fa-google-plus-g text-[14px] "></i>
+      
+                    </div>
+               
+                    </div>
+              
+                    <!-- Quick Contact Section -->
+                    <div>
+                      <h2 class="text-xl font-semibold mb-4">Quick Contact</h2>
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        class="w-full p-2 border border-gray-300 outline-none rounded-md mb-3 "
+                      />
+                      <input
+                        type="email"
+                        placeholder="Your Email"
+                        class="w-full p-2 border   border-gray-300 outline-none rounded-md mb-3 "
+                      />
+                      <textarea
+                        placeholder="Your Message"
+                        class="w-full p-2 border  border-gray-300 outline-none  rounded-md mb-3 "
+                        rows="4"
+                      ></textarea>
+                      <button
+                        class=" px-[45px] uppercase bg-[#ff9822] text-white py-[14px] text-[15px] rounded-md hover:bg-[#5d2b00] transition"
+                      >
+                        Submit Now
+                      </button>
+                    </div>
+              
+                  </div>
+                </div>
+              
+                
+              </div>
+              <div class="py-5  bg-[#ff9822]">
+                <div class="container mx-auto px-8">
+                  <div class="flex icons justify-center lg:flex-row flex-col gap-4">
+                    <h4 class="text-[24px] text-center lg:text-start text-white flex-1">Subscribe, For Weekly Updates</h4>
+                   <div class="relative flex-1 lg:flex-2">
+                    <input type="text" placeholder="Enter your email address" class=" w-full py-[10px] px-[45px] rounded-full bg-white  border border-white  focus:outline-none " />
+                    <button class=" text-white absolute right-0 py-[10px] px-[45px]  rounded-full ml-2 uppercase bg-[#5d2b00] hover:bg-black bottom-0 top-0 tracking-tighter transition">SIGN UP</button>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        
+        
+         
+        </footer>
+    </section>
+    
+    <!-- footer section -->
+
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Initialization -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
