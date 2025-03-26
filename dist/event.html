@@ -79,12 +79,12 @@
 
   <body>
     <!-- Hero Section -->
-    <section class="relative h-[400px] w-full">
+    <section class="relative w-full h-[400px]">
       <!-- top bar -->
       <div
-        class="absolute top-0 left-0 right-0 h-[50px] flex items-center justify-center text-white text-center z-10"
+        class="top-0 right-0 left-0 z-10 absolute flex justify-center items-center h-[50px] text-white text-center"
       >
-        <div class="flex justify-between container mx-auto">
+        <div class="flex justify-between mx-auto container">
           <div class="flex items-center gap-4">
             <span class="text-[14px]">Follow us:</span>
             <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
@@ -96,14 +96,14 @@
           </div>
           <div class="flex items-center gap-4">
             <div class="flex items-center gap-2">
-              <i class="fas fa-phone-alt text-[#ff9822] theme-clr text-[12px]"></i>
-              <span class="text-[12px] hover:text-[#ff9822]  transition"
+              <i class="text-[#ff9822] text-[12px] fas fa-phone-alt theme-clr"></i>
+              <span class="text-[12px] hover:text-[#ff9822] transition"
                 >Call us: 123-456-7890</span
               >
             </div>
-            <div class="flex gap-2 items-center">
+            <div class="flex items-center gap-2">
               <i
-                class="fas fa-envelope theme-clr text-[#ff9822] text-[12px]"
+                class="text-[#ff9822] text-[12px] fas fa-envelope theme-clr"
               ></i>
               <span class="text-[12px] hover:text-[#ff9822] transition"
                 >Email us: 123@example.com</span
@@ -116,15 +116,15 @@
 
       <!-- Menu -->
       <div
-        class="absolute bg-[rgba(0,0,0,0.5)] right-0 left-0 top-[50px] h-[120px] z-10"
+        class="top-[50px] right-0 left-0 z-10 absolute bg-[rgba(0,0,0,0.5)] h-[120px]"
       >
-        <div class="container h-full mx-auto px-8">
-          <div class="flex h-full justify-between items-center">
+        <div class="mx-auto px-8 h-full container">
+          <div class="flex justify-between items-center h-full">
             <div class="logo">
               <a href="index.html" title="Logo" itemprop="url"
                 ><img
                   class="h-20"
-                  src="/images/logo1.png"
+                  src="images/logo1.png"
                   alt="logo1.png"
                   itemprop="image"
               /></a>
@@ -146,23 +146,23 @@
       <!-- Menu -->
 
       <!-- Swiper Container -->
-      <div class="swiper mySwiper w-full h-full">
+      <div class="w-full h-full swiper mySwiper">
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
 
-          <div class="swiper-slide relative">
+          <div class="relative swiper-slide">
             <img
-              src="/images/slide-4.jpg"
+              src="images/slide-4.jpg"
               class="w-full h-full object-cover"
               alt="Slide 1"
             />
             <div
-              class="absolute mt-20 inset-0 flex flex-col items-center justify-center text-white text-center p-6"
+              class="absolute inset-0 flex flex-col justify-center items-center mt-20 p-6 text-white text-center"
             >
-              <h1 class="text-[48px] inline-block text-white text-center">
+              <h1 class="inline-block text-[48px] text-white text-center">
                 Upcoming Event
               </h1>
-              <div class="h-[2px] w-[70px] my-4 bg-amber-400"></div>
+              <div class="bg-amber-400 my-4 w-[70px] h-[2px]"></div>
             </div>
           </div>
         </div>
@@ -173,20 +173,20 @@
 
     <!-- event  -->
     <section class="pt-[100px]">
-      <div class="container mx-auto px-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 lg:grid-cols-3">
+      <div class="mx-auto px-8 container">
+        <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
           <div class="bg-white">
             <div class="relative">
               <img
-                class="h-full w-full object-cover"
-                src="/images/event-img1.jpg"
+                class="w-full h-full object-cover"
+                src="images/event-img1.jpg"
                 alt=""
               />
-              <div class="absolute top-0 left-0 w-[60px]  z-[77] text-white">
-                <div class="absolute inset-0 bg-[#ff9822] opacity-60 z-[-33]"></div>
+              <div class="top-0 left-0 z-[77] absolute w-[60px] text-white">
+                <div class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"></div>
                
 
-                  <span class="flex flex-col text-[22px] items-center p-2">
+                  <span class="flex flex-col items-center p-2 text-[22px]">
                     25
                     <i>Aug</i>
                   </span>
@@ -195,34 +195,34 @@
 
               </div>
               <div
-                class="absolute right-0 left-0  bottom-0"
+                class="right-0 bottom-0 left-0 absolute"
               >
               <!-- reduce bg color  -->
-              <div class="bg-[#ff9822]  absolute inset-0 opacity-60"></div>
+              <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
                 <div>
-                  <ul class="flex border-r justify-evenly gap-4 p-4">
-                    <li class="flex items-center relative">
+                  <ul class="flex justify-evenly gap-4 p-4 border-r">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">85</span>
                       <p><span class="text-white">Days</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">32</span>
                       <p><span class="text-white">Hours</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">54</span>
                       <p><span class="text-white">Minutes</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">33</span>
                       <p><span class="text-white">Seconds</span></p>
@@ -239,20 +239,20 @@
                 <div class="flex flex-col gap-3 p-4">
                   <h5 itemprop=" ">
                     <a
-                      class="text-[24px] hover:text-[#ff9822] transition text-[#222]"
+                      class="text-[#222] text-[24px] hover:text-[#ff9822] transition"
                       href="blog-detail.html"
                       >Importance of Namaz?</a
                     >
                   </h5>
-                  <ul class="text-[12px] text-[#666] flex items-center gap-3">
+                  <ul class="flex items-center gap-3 text-[#666] text-[12px]">
                     <li>
                       <i
-                        class="fa-solid text-[#ff9822] mr-2 fa-location-dot"
+                        class="mr-2 text-[#ff9822] fa-solid fa-location-dot"
                       ></i>
                       Delhi, Jamia Mosque
                     </li>
                     <li>
-                      <i class="fa-solid fa-clock mr-2 text-[#ff9822]"></i
+                      <i class="mr-2 text-[#ff9822] fa-solid fa-clock"></i
                       ><a href="#" title="" itemprop="url"
                         >04:00 pm - 08:00 pm</a
                       >
@@ -264,7 +264,7 @@
                   </p>
                   <a
                     href="blog-detail.html"
-                    class="text-[#555] font-[400] text-[15px] hover:text-[#ff9822]"
+                    class="font-[400] text-[#555] text-[15px] hover:text-[#ff9822]"
                     >Event Details</a
                   >
                 </div>
@@ -274,15 +274,15 @@
           <div class="bg-white">
             <div class="relative">
               <img
-                class="h-full w-full object-cover"
-                src="/images/event-img1.jpg"
+                class="w-full h-full object-cover"
+                src="images/event-img1.jpg"
                 alt=""
               />
-              <div class="absolute top-0 left-0 w-[60px]  z-[77] text-white">
-                <div class="absolute inset-0 bg-[#ff9822] opacity-60 z-[-33]"></div>
+              <div class="top-0 left-0 z-[77] absolute w-[60px] text-white">
+                <div class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"></div>
                
 
-                  <span class="flex flex-col text-[22px] items-center p-2">
+                  <span class="flex flex-col items-center p-2 text-[22px]">
                     25
                     <i>Aug</i>
                   </span>
@@ -291,34 +291,34 @@
 
               </div>
               <div
-                class="absolute right-0 left-0  bottom-0"
+                class="right-0 bottom-0 left-0 absolute"
               >
               <!-- reduce bg color  -->
-              <div class="bg-[#ff9822]  absolute inset-0 opacity-60"></div>
+              <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
                 <div>
-                  <ul class="flex border-r justify-evenly gap-4 p-4">
-                    <li class="flex items-center relative">
+                  <ul class="flex justify-evenly gap-4 p-4 border-r">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">85</span>
                       <p><span class="text-white">Days</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">32</span>
                       <p><span class="text-white">Hours</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">54</span>
                       <p><span class="text-white">Minutes</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">33</span>
                       <p><span class="text-white">Seconds</span></p>
@@ -335,20 +335,20 @@
                 <div class="flex flex-col gap-3 p-4">
                   <h5 itemprop=" ">
                     <a
-                      class="text-[24px] hover:text-[#ff9822] transition text-[#222]"
+                      class="text-[#222] text-[24px] hover:text-[#ff9822] transition"
                       href="blog-detail.html"
                       >Importance of Namaz?</a
                     >
                   </h5>
-                  <ul class="text-[12px] text-[#666] flex items-center gap-3">
+                  <ul class="flex items-center gap-3 text-[#666] text-[12px]">
                     <li>
                       <i
-                        class="fa-solid text-[#ff9822] mr-2 fa-location-dot"
+                        class="mr-2 text-[#ff9822] fa-solid fa-location-dot"
                       ></i>
                       Delhi, Jamia Mosque
                     </li>
                     <li>
-                      <i class="fa-solid fa-clock mr-2 text-[#ff9822]"></i
+                      <i class="mr-2 text-[#ff9822] fa-solid fa-clock"></i
                       ><a href="#" title="" itemprop="url"
                         >04:00 pm - 08:00 pm</a
                       >
@@ -360,7 +360,7 @@
                   </p>
                   <a
                     href="blog-detail.html"
-                    class="text-[#555] font-[400] text-[15px] hover:text-[#ff9822]"
+                    class="font-[400] text-[#555] text-[15px] hover:text-[#ff9822]"
                     >Event Details</a
                   >
                 </div>
@@ -370,15 +370,15 @@
           <div class="bg-white">
             <div class="relative">
               <img
-                class="h-full w-full object-cover"
-                src="/images/event-img1.jpg"
+                class="w-full h-full object-cover"
+                src="images/event-img1.jpg"
                 alt=""
               />
-              <div class="absolute top-0 left-0 w-[60px]  z-[77] text-white">
-                <div class="absolute inset-0 bg-[#ff9822] opacity-60 z-[-33]"></div>
+              <div class="top-0 left-0 z-[77] absolute w-[60px] text-white">
+                <div class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"></div>
                
 
-                  <span class="flex flex-col text-[22px] items-center p-2">
+                  <span class="flex flex-col items-center p-2 text-[22px]">
                     25
                     <i>Aug</i>
                   </span>
@@ -387,34 +387,34 @@
 
               </div>
               <div
-                class="absolute right-0 left-0  bottom-0"
+                class="right-0 bottom-0 left-0 absolute"
               >
               <!-- reduce bg color  -->
-              <div class="bg-[#ff9822]  absolute inset-0 opacity-60"></div>
+              <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
                 <div>
-                  <ul class="flex border-r justify-evenly gap-4 p-4">
-                    <li class="flex items-center relative">
+                  <ul class="flex justify-evenly gap-4 p-4 border-r">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">85</span>
                       <p><span class="text-white">Days</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">32</span>
                       <p><span class="text-white">Hours</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">54</span>
                       <p><span class="text-white">Minutes</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">33</span>
                       <p><span class="text-white">Seconds</span></p>
@@ -431,20 +431,20 @@
                 <div class="flex flex-col gap-3 p-4">
                   <h5 itemprop=" ">
                     <a
-                      class="text-[24px] hover:text-[#ff9822] transition text-[#222]"
+                      class="text-[#222] text-[24px] hover:text-[#ff9822] transition"
                       href="blog-detail.html"
                       >Importance of Namaz?</a
                     >
                   </h5>
-                  <ul class="text-[12px] text-[#666] flex items-center gap-3">
+                  <ul class="flex items-center gap-3 text-[#666] text-[12px]">
                     <li>
                       <i
-                        class="fa-solid text-[#ff9822] mr-2 fa-location-dot"
+                        class="mr-2 text-[#ff9822] fa-solid fa-location-dot"
                       ></i>
                       Delhi, Jamia Mosque
                     </li>
                     <li>
-                      <i class="fa-solid fa-clock mr-2 text-[#ff9822]"></i
+                      <i class="mr-2 text-[#ff9822] fa-solid fa-clock"></i
                       ><a href="#" title="" itemprop="url"
                         >04:00 pm - 08:00 pm</a
                       >
@@ -456,7 +456,7 @@
                   </p>
                   <a
                     href="blog-detail.html"
-                    class="text-[#555] font-[400] text-[15px] hover:text-[#ff9822]"
+                    class="font-[400] text-[#555] text-[15px] hover:text-[#ff9822]"
                     >Event Details</a
                   >
                 </div>
@@ -466,15 +466,15 @@
           <div class="bg-white">
             <div class="relative">
               <img
-                class="h-full w-full object-cover"
-                src="/images/event-img1.jpg"
+                class="w-full h-full object-cover"
+                src="images/event-img1.jpg"
                 alt=""
               />
-              <div class="absolute top-0 left-0 w-[60px]  z-[77] text-white">
-                <div class="absolute inset-0 bg-[#ff9822] opacity-60 z-[-33]"></div>
+              <div class="top-0 left-0 z-[77] absolute w-[60px] text-white">
+                <div class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"></div>
                
 
-                  <span class="flex flex-col text-[22px] items-center p-2">
+                  <span class="flex flex-col items-center p-2 text-[22px]">
                     25
                     <i>Aug</i>
                   </span>
@@ -483,34 +483,34 @@
 
               </div>
               <div
-                class="absolute right-0 left-0  bottom-0"
+                class="right-0 bottom-0 left-0 absolute"
               >
               <!-- reduce bg color  -->
-              <div class="bg-[#ff9822]  absolute inset-0 opacity-60"></div>
+              <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
                 <div>
-                  <ul class="flex border-r justify-evenly gap-4 p-4">
-                    <li class="flex items-center relative">
+                  <ul class="flex justify-evenly gap-4 p-4 border-r">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">85</span>
                       <p><span class="text-white">Days</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">32</span>
                       <p><span class="text-white">Hours</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">54</span>
                       <p><span class="text-white">Minutes</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">33</span>
                       <p><span class="text-white">Seconds</span></p>
@@ -527,20 +527,20 @@
                 <div class="flex flex-col gap-3 p-4">
                   <h5 itemprop=" ">
                     <a
-                      class="text-[24px] hover:text-[#ff9822] transition text-[#222]"
+                      class="text-[#222] text-[24px] hover:text-[#ff9822] transition"
                       href="blog-detail.html"
                       >Importance of Namaz?</a
                     >
                   </h5>
-                  <ul class="text-[12px] text-[#666] flex items-center gap-3">
+                  <ul class="flex items-center gap-3 text-[#666] text-[12px]">
                     <li>
                       <i
-                        class="fa-solid text-[#ff9822] mr-2 fa-location-dot"
+                        class="mr-2 text-[#ff9822] fa-solid fa-location-dot"
                       ></i>
                       Delhi, Jamia Mosque
                     </li>
                     <li>
-                      <i class="fa-solid fa-clock mr-2 text-[#ff9822]"></i
+                      <i class="mr-2 text-[#ff9822] fa-solid fa-clock"></i
                       ><a href="#" title="" itemprop="url"
                         >04:00 pm - 08:00 pm</a
                       >
@@ -552,7 +552,7 @@
                   </p>
                   <a
                     href="blog-detail.html"
-                    class="text-[#555] font-[400] text-[15px] hover:text-[#ff9822]"
+                    class="font-[400] text-[#555] text-[15px] hover:text-[#ff9822]"
                     >Event Details</a
                   >
                 </div>
@@ -562,15 +562,15 @@
           <div class="bg-white">
             <div class="relative">
               <img
-                class="h-full w-full object-cover"
-                src="/images/event-img1.jpg"
+                class="w-full h-full object-cover"
+                src="images/event-img1.jpg"
                 alt=""
               />
-              <div class="absolute top-0 left-0 w-[60px]  z-[77] text-white">
-                <div class="absolute inset-0 bg-[#ff9822] opacity-60 z-[-33]"></div>
+              <div class="top-0 left-0 z-[77] absolute w-[60px] text-white">
+                <div class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"></div>
                
 
-                  <span class="flex flex-col text-[22px] items-center p-2">
+                  <span class="flex flex-col items-center p-2 text-[22px]">
                     25
                     <i>Aug</i>
                   </span>
@@ -579,34 +579,34 @@
 
               </div>
               <div
-                class="absolute right-0 left-0  bottom-0"
+                class="right-0 bottom-0 left-0 absolute"
               >
               <!-- reduce bg color  -->
-              <div class="bg-[#ff9822]  absolute inset-0 opacity-60"></div>
+              <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
                 <div>
-                  <ul class="flex border-r justify-evenly gap-4 p-4">
-                    <li class="flex items-center relative">
+                  <ul class="flex justify-evenly gap-4 p-4 border-r">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">85</span>
                       <p><span class="text-white">Days</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">32</span>
                       <p><span class="text-white">Hours</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">54</span>
                       <p><span class="text-white">Minutes</span></p>
                       </div>
-                      <div class="w-[1px] h-[40px] absolute -right-5  bg-white"></div>
+                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
                     </li>
-                    <li class="flex items-center relative">
+                    <li class="relative flex items-center">
                       <div>
                         <span class="text-white">33</span>
                       <p><span class="text-white">Seconds</span></p>
@@ -623,20 +623,20 @@
                 <div class="flex flex-col gap-3 p-4">
                   <h5 itemprop=" ">
                     <a
-                      class="text-[24px] hover:text-[#ff9822] transition text-[#222]"
+                      class="text-[#222] text-[24px] hover:text-[#ff9822] transition"
                       href="blog-detail.html"
                       >Importance of Namaz?</a
                     >
                   </h5>
-                  <ul class="text-[12px] text-[#666] flex items-center gap-3">
+                  <ul class="flex items-center gap-3 text-[#666] text-[12px]">
                     <li>
                       <i
-                        class="fa-solid text-[#ff9822] mr-2 fa-location-dot"
+                        class="mr-2 text-[#ff9822] fa-solid fa-location-dot"
                       ></i>
                       Delhi, Jamia Mosque
                     </li>
                     <li>
-                      <i class="fa-solid fa-clock mr-2 text-[#ff9822]"></i
+                      <i class="mr-2 text-[#ff9822] fa-solid fa-clock"></i
                       ><a href="#" title="" itemprop="url"
                         >04:00 pm - 08:00 pm</a
                       >
@@ -648,7 +648,7 @@
                   </p>
                   <a
                     href="blog-detail.html"
-                    class="text-[#555] font-[400] text-[15px] hover:text-[#ff9822]"
+                    class="font-[400] text-[#555] text-[15px] hover:text-[#ff9822]"
                     >Event Details</a
                   >
                 </div>
@@ -658,38 +658,38 @@
         </div>
         <!-- pagination -->
          <div class="mt-20">
-          <ul class="flex items-center justify-center space-x-2 mt-6">
+          <ul class="flex justify-center items-center space-x-2 mt-6">
             <li>
-              <a href="#" class="px-6 py-4 bg-white  rounded-md text-gray-600 hover:bg-[#ff9822] hover:text-white transition">
-                <i class="fa-solid fa-angle-left"></i>
+              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
+                <i class="fa-angle-left fa-solid"></i>
               </a>
             </li>
           
             <li>
-              <a href="#" class="px-6 py-4 bg-white  rounded-md text-gray-600 hover:bg-[#ff9822] hover:text-white transition">
+              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
                 1
               </a>
             </li>
           
             <li>
-              <a href="#" class="px-6 py-4 bg-white  rounded-md text-gray-600 hover:bg-[#ff9822] hover:text-white transition">
+              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
                 2
               </a>
             </li>
           
             <li>
-              <a href="#" class="px-6 py-4 bg-white  rounded-md text-gray-600 hover:bg-[#ff9822] hover:text-white transition">
+              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
                 3
               </a>
             </li>
             <li>
-              <a href="#" class="px-6 py-4 bg-white  rounded-md text-gray-600 hover:bg-[#ff9822] hover:text-white transition">
+              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
                 ...
               </a>
             </li>
             <li>
-              <a href="#" class="px-6 py-4 bg-white  rounded-md text-gray-600 hover:bg-[#ff9822] hover:text-white transition">
-                <i class="fa-solid fa-angle-right"></i>
+              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
+                <i class="fa-angle-right fa-solid"></i>
               </a>
             </li>
           </ul>
@@ -702,21 +702,21 @@
     <!-- footer section -->
     <section>
       <footer class="pt-[30rem] md:pt-[100px] lg:pt-0">
-        <div class="w-full h-full bg-[#f8f9fa]">
-          <img src="/images/bg-vector.png" alt="" />
+        <div class="bg-[#f8f9fa] w-full h-full">
+          <img src="images/bg-vector.png" alt="" />
           <div>
-            <div class="py-[270px] pb-[50px] relative bg-[#ff9822]">
+            <div class="relative bg-[#ff9822] py-[270px] pb-[50px]">
               <div
-                class="container mx-auto bottom-0 absolute lg:-top-44 right-0 left-0 px-4"
+                class="lg:-top-44 right-0 bottom-0 left-0 absolute mx-auto px-4 container"
               >
                 <div
-                  class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 py-10 px-8 rounded-lg bg-white gap-8"
+                  class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white px-8 py-10 rounded-lg"
                 >
                   <!-- About Us Section -->
                   <div>
-                    <h2 class="text-xl font-semibold mb-4">About Us</h2>
-                    <p class="text-gray-600 mb-4">
-                      <span class="text-[13px] text-[#555]">
+                    <h2 class="mb-4 font-semibold text-xl">About Us</h2>
+                    <p class="mb-4 text-gray-600">
+                      <span class="text-[#555] text-[13px]">
                         Lorem ipsum dolor sit amet, conec tetur adipisicing
                         elit, sed do eiusd tempor incididunt ut labore dolore
                         magna aliqua tempor.</span
@@ -724,7 +724,7 @@
                     </p>
                     <div class="w-full h-24">
                       <iframe
-                        class="w-full h-full rounded-lg"
+                        class="rounded-lg w-full h-full"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902120515761!2d90.390242!3d23.750885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b89d043ca9a1%3A0xf0b57c0cf735b75e!2sDhaka!5e0!3m2!1sen!2sbd!4v1614853909120!5m2!1sen!2sbd"
                         allowfullscreen=""
                         loading="lazy"
@@ -734,22 +734,22 @@
 
                   <!-- Latest Blogs Section -->
                   <div>
-                    <h2 class="text-xl font-semibold mb-4">Latest Blogs</h2>
-                    <div class="flex p-4 rounded-lg gap-3">
+                    <h2 class="mb-4 font-semibold text-xl">Latest Blogs</h2>
+                    <div class="flex gap-3 p-4 rounded-lg">
                       <div>
                         <img
-                          src="/images/rcnt-img1.jpg"
+                          src="images/rcnt-img1.jpg"
                           alt="Blog Image"
-                          class="w-full h-16 object-cover rounded-md"
+                          class="rounded-md w-full h-16 object-cover"
                         />
                       </div>
                       <div>
-                        <h3 class="text-[14px] font-[400] hover-[#ff9822] mt-2">
+                        <h3 class="mt-2 font-[400] text-[14px] hover-[#ff9822]">
                           Help the poor people
                         </h3>
                         <p>
-                          <span class="text-[12px] text-[#ff9822]">
-                            <i class="far fa-calendar-alt mr-1"></i> March 25,
+                          <span class="text-[#ff9822] text-[12px]">
+                            <i class="mr-1 far fa-calendar-alt"></i> March 25,
                             2025</span
                           >
                         </p>
@@ -759,68 +759,68 @@
 
                   <!-- Contact Info Section -->
                   <div>
-                    <h2 class="text-xl font-semibold mb-4">Contact Info</h2>
+                    <h2 class="mb-4 font-semibold text-xl">Contact Info</h2>
                     <div>
-                      <p class="border-b py-2 border-dashed border-[#ddd]">
-                        <strong class="text-[12px] text-[#ddd]"
+                      <p class="py-2 border-[#ddd] border-b border-dashed">
+                        <strong class="text-[#ddd] text-[12px]"
                           ><i
-                            class="far fa-envelope mr-2 text-[#ff9822] theme-clr"
+                            class="mr-2 text-[#ff9822] far fa-envelope theme-clr"
                           ></i
                         ></strong>
                         info@example.com
                       </p>
 
-                      <p class="border-b py-2 border-dashed border-[#ddd]">
-                        <strong class="text-[12px] text-[#ddd]"
+                      <p class="py-2 border-[#ddd] border-b border-dashed">
+                        <strong class="text-[#ddd] text-[12px]"
                           ><i
-                            class="far fa-envelope mr-2 text-[#ff9822] theme-clr"
+                            class="mr-2 text-[#ff9822] far fa-envelope theme-clr"
                           ></i
                         ></strong>
                         info@example.com
                       </p>
 
-                      <p class="border-b py-2 border-dashed border-[#ddd]">
-                        <strong class="text-[12px] text-[#ddd]"
+                      <p class="py-2 border-[#ddd] border-b border-dashed">
+                        <strong class="text-[#ddd] text-[12px]"
                           ><i
-                            class="far fa-envelope mr-2 text-[#ff9822] theme-clr"
+                            class="mr-2 text-[#ff9822] far fa-envelope theme-clr"
                           ></i
                         ></strong>
                         info@example.com
                       </p>
                     </div>
 
-                    <div class="flex gap-6 pt-6 text-[#222] items-center">
+                    <div class="flex items-center gap-6 pt-6 text-[#222]">
                       <!-- fb icon -->
-                      <i class="fab fa-facebook-f text-[14px]"></i>
+                      <i class="text-[14px] fab fa-facebook-f"></i>
                       <!-- twitter icon -->
-                      <i class="fab fa-twitter text-[14px]"></i>
+                      <i class="text-[14px] fab fa-twitter"></i>
                       <!-- linkedin icon -->
-                      <i class="fab fa-linkedin-in text-[14px]"></i>
+                      <i class="text-[14px] fab fa-linkedin-in"></i>
                       <!-- google plus icon -->
-                      <i class="fab fa-google-plus-g text-[14px]"></i>
+                      <i class="text-[14px] fab fa-google-plus-g"></i>
                     </div>
                   </div>
 
                   <!-- Quick Contact Section -->
                   <div>
-                    <h2 class="text-xl font-semibold mb-4">Quick Contact</h2>
+                    <h2 class="mb-4 font-semibold text-xl">Quick Contact</h2>
                     <input
                       type="text"
                       placeholder="Your Name"
-                      class="w-full p-2 border border-gray-300 outline-none rounded-md mb-3"
+                      class="mb-3 p-2 border border-gray-300 rounded-md outline-none w-full"
                     />
                     <input
                       type="email"
                       placeholder="Your Email"
-                      class="w-full p-2 border border-gray-300 outline-none rounded-md mb-3"
+                      class="mb-3 p-2 border border-gray-300 rounded-md outline-none w-full"
                     />
                     <textarea
                       placeholder="Your Message"
-                      class="w-full p-2 border border-gray-300 outline-none rounded-md mb-3"
+                      class="mb-3 p-2 border border-gray-300 rounded-md outline-none w-full"
                       rows="4"
                     ></textarea>
                     <button
-                      class="px-[45px] uppercase bg-[#ff9822] text-white py-[14px] text-[15px] rounded-md hover:bg-[#5d2b00] transition"
+                      class="bg-[#ff9822] hover:bg-[#5d2b00] px-[45px] py-[14px] rounded-md text-[15px] text-white uppercase transition"
                     >
                       Submit Now
                     </button>
@@ -828,13 +828,13 @@
                 </div>
               </div>
             </div>
-            <div class="py-5 bg-[#ff9822]">
-              <div class="container mx-auto px-8">
+            <div class="bg-[#ff9822] py-5">
+              <div class="mx-auto px-8 container">
                 <div
-                  class="flex icons justify-center lg:flex-row flex-col gap-4"
+                  class="flex lg:flex-row flex-col justify-center gap-4 icons"
                 >
                   <h4
-                    class="text-[24px] text-center lg:text-start text-white flex-1"
+                    class="flex-1 text-[24px] text-white text-center lg:text-start"
                   >
                     Subscribe, For Weekly Updates
                   </h4>
@@ -842,10 +842,10 @@
                     <input
                       type="text"
                       placeholder="Enter your email address"
-                      class="w-full py-[10px] px-[45px] rounded-full bg-white border border-white focus:outline-none"
+                      class="bg-white px-[45px] py-[10px] border border-white rounded-full focus:outline-none w-full"
                     />
                     <button
-                      class="text-white absolute right-0 py-[10px] px-[45px] rounded-full ml-2 uppercase bg-[#5d2b00] hover:bg-black bottom-0 top-0 tracking-tighter transition"
+                      class="top-0 right-0 bottom-0 absolute bg-[#5d2b00] hover:bg-black ml-2 px-[45px] py-[10px] rounded-full text-white uppercase tracking-tighter transition"
                     >
                       SIGN UP
                     </button>
