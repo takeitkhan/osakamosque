@@ -38,7 +38,6 @@
         --secondary-clr: #5d2b00;
       }
 
-
       /* Custom styles for better text visibility */
       p {
         font-size: 14.5px;
@@ -71,7 +70,7 @@
       }
 
       body {
-        font-family: "Merriweather", serif;
+        font-family: 'Merriweather', serif;
         background-color: #f8f9fa;
       }
     </style>
@@ -96,7 +95,9 @@
           </div>
           <div class="flex items-center gap-4">
             <div class="flex items-center gap-2">
-              <i class="text-[#ff9822] text-[12px] fas fa-phone-alt theme-clr"></i>
+              <i
+                class="text-[#ff9822] text-[12px] fas fa-phone-alt theme-clr"
+              ></i>
               <span class="text-[12px] hover:text-[#ff9822] transition"
                 >Call us: 123-456-7890</span
               >
@@ -129,11 +130,85 @@
                   itemprop="image"
               /></a>
             </div>
-            <div class="">
+            <div>
               <nav>
                 <ul class="flex gap-10 text-white">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="/dist/event.html">Event</a></li>
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="event.html"
+                      class="flex items-center gap-1 cursor-pointer"
+                    >
+                      Event
+                      <svg
+                        class="w-4 h-4 group-hover:rotate-180 transition-transform"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                    <ul
+                      class="invisible group-hover:visible left-0 absolute bg-white opacity-0 group-hover:opacity-100 mt-2 min-w-[180px] text-black transition-all duration-300"
+                    >
+                      <li class="group/submenu relative">
+                        <a
+                          href="#"
+                          class="flex justify-between items-center px-4 py-2 hover:text-[#ff9822]"
+                        >
+                          Upcoming Events
+                          <svg
+                            class="w-4 h-4 transition-transform group-hover/submenu:translate-x-1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </a>
+                        <ul
+                          class="invisible group-hover/submenu:visible top-0 left-full absolute bg-white opacity-0 group-hover/submenu:opacity-100 ml-2 min-w-[180px] text-black transition-all duration-300"
+                        >
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:text-[#ff9822]"
+                              >Conference</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:text-[#ff9822]"
+                              >Workshops</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:text-[#ff9822]"
+                          >Past Events</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:bg-gray-200 px-4 py-2"
+                          >Event Gallery</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
                   <li><a href="#">Our Courses</a></li>
                   <li><a href="#">Our Services</a></li>
                   <li><a href="#">Contact</a></li>
@@ -166,15 +241,15 @@
             </div>
           </div>
         </div>
-
-       
       </div>
     </section>
 
     <!-- event  -->
     <section class="pt-[100px]">
       <div class="mx-auto px-8 container">
-        <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="gap-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
+        >
           <div class="bg-white">
             <div class="relative">
               <img
@@ -183,53 +258,53 @@
                 alt=""
               />
               <div class="top-0 left-0 z-[77] absolute w-[60px] text-white">
-                <div class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"></div>
-               
+                <div
+                  class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"
+                ></div>
 
-                  <span class="flex flex-col items-center p-2 text-[22px]">
-                    25
-                    <i>Aug</i>
-                  </span>
-               
-                
-
+                <span class="flex flex-col items-center p-2 text-[22px]">
+                  25
+                  <i>Aug</i>
+                </span>
               </div>
-              <div
-                class="right-0 bottom-0 left-0 absolute"
-              >
-              <!-- reduce bg color  -->
-              <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
+              <div class="right-0 bottom-0 left-0 absolute">
+                <!-- reduce bg color  -->
+                <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
                 <div>
                   <ul class="flex justify-evenly gap-4 p-4 border-r">
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">85</span>
-                      <p><span class="text-white">Days</span></p>
+                        <p><span class="text-white">Days</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">32</span>
-                      <p><span class="text-white">Hours</span></p>
+                        <p><span class="text-white">Hours</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">54</span>
-                      <p><span class="text-white">Minutes</span></p>
+                        <p><span class="text-white">Minutes</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">33</span>
-                      <p><span class="text-white">Seconds</span></p>
+                        <p><span class="text-white">Seconds</span></p>
                       </div>
-                    
                     </li>
-
                   </ul>
                 </div>
               </div>
@@ -279,53 +354,53 @@
                 alt=""
               />
               <div class="top-0 left-0 z-[77] absolute w-[60px] text-white">
-                <div class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"></div>
-               
+                <div
+                  class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"
+                ></div>
 
-                  <span class="flex flex-col items-center p-2 text-[22px]">
-                    25
-                    <i>Aug</i>
-                  </span>
-               
-                
-
+                <span class="flex flex-col items-center p-2 text-[22px]">
+                  25
+                  <i>Aug</i>
+                </span>
               </div>
-              <div
-                class="right-0 bottom-0 left-0 absolute"
-              >
-              <!-- reduce bg color  -->
-              <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
+              <div class="right-0 bottom-0 left-0 absolute">
+                <!-- reduce bg color  -->
+                <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
                 <div>
                   <ul class="flex justify-evenly gap-4 p-4 border-r">
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">85</span>
-                      <p><span class="text-white">Days</span></p>
+                        <p><span class="text-white">Days</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">32</span>
-                      <p><span class="text-white">Hours</span></p>
+                        <p><span class="text-white">Hours</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">54</span>
-                      <p><span class="text-white">Minutes</span></p>
+                        <p><span class="text-white">Minutes</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">33</span>
-                      <p><span class="text-white">Seconds</span></p>
+                        <p><span class="text-white">Seconds</span></p>
                       </div>
-                    
                     </li>
-
                   </ul>
                 </div>
               </div>
@@ -375,53 +450,53 @@
                 alt=""
               />
               <div class="top-0 left-0 z-[77] absolute w-[60px] text-white">
-                <div class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"></div>
-               
+                <div
+                  class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"
+                ></div>
 
-                  <span class="flex flex-col items-center p-2 text-[22px]">
-                    25
-                    <i>Aug</i>
-                  </span>
-               
-                
-
+                <span class="flex flex-col items-center p-2 text-[22px]">
+                  25
+                  <i>Aug</i>
+                </span>
               </div>
-              <div
-                class="right-0 bottom-0 left-0 absolute"
-              >
-              <!-- reduce bg color  -->
-              <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
+              <div class="right-0 bottom-0 left-0 absolute">
+                <!-- reduce bg color  -->
+                <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
                 <div>
                   <ul class="flex justify-evenly gap-4 p-4 border-r">
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">85</span>
-                      <p><span class="text-white">Days</span></p>
+                        <p><span class="text-white">Days</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">32</span>
-                      <p><span class="text-white">Hours</span></p>
+                        <p><span class="text-white">Hours</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">54</span>
-                      <p><span class="text-white">Minutes</span></p>
+                        <p><span class="text-white">Minutes</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">33</span>
-                      <p><span class="text-white">Seconds</span></p>
+                        <p><span class="text-white">Seconds</span></p>
                       </div>
-                    
                     </li>
-
                   </ul>
                 </div>
               </div>
@@ -471,53 +546,53 @@
                 alt=""
               />
               <div class="top-0 left-0 z-[77] absolute w-[60px] text-white">
-                <div class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"></div>
-               
+                <div
+                  class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"
+                ></div>
 
-                  <span class="flex flex-col items-center p-2 text-[22px]">
-                    25
-                    <i>Aug</i>
-                  </span>
-               
-                
-
+                <span class="flex flex-col items-center p-2 text-[22px]">
+                  25
+                  <i>Aug</i>
+                </span>
               </div>
-              <div
-                class="right-0 bottom-0 left-0 absolute"
-              >
-              <!-- reduce bg color  -->
-              <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
+              <div class="right-0 bottom-0 left-0 absolute">
+                <!-- reduce bg color  -->
+                <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
                 <div>
                   <ul class="flex justify-evenly gap-4 p-4 border-r">
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">85</span>
-                      <p><span class="text-white">Days</span></p>
+                        <p><span class="text-white">Days</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">32</span>
-                      <p><span class="text-white">Hours</span></p>
+                        <p><span class="text-white">Hours</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">54</span>
-                      <p><span class="text-white">Minutes</span></p>
+                        <p><span class="text-white">Minutes</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">33</span>
-                      <p><span class="text-white">Seconds</span></p>
+                        <p><span class="text-white">Seconds</span></p>
                       </div>
-                    
                     </li>
-
                   </ul>
                 </div>
               </div>
@@ -567,53 +642,53 @@
                 alt=""
               />
               <div class="top-0 left-0 z-[77] absolute w-[60px] text-white">
-                <div class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"></div>
-               
+                <div
+                  class="z-[-33] absolute inset-0 bg-[#ff9822] opacity-60"
+                ></div>
 
-                  <span class="flex flex-col items-center p-2 text-[22px]">
-                    25
-                    <i>Aug</i>
-                  </span>
-               
-                
-
+                <span class="flex flex-col items-center p-2 text-[22px]">
+                  25
+                  <i>Aug</i>
+                </span>
               </div>
-              <div
-                class="right-0 bottom-0 left-0 absolute"
-              >
-              <!-- reduce bg color  -->
-              <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
+              <div class="right-0 bottom-0 left-0 absolute">
+                <!-- reduce bg color  -->
+                <div class="absolute inset-0 bg-[#ff9822] opacity-60"></div>
                 <div>
                   <ul class="flex justify-evenly gap-4 p-4 border-r">
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">85</span>
-                      <p><span class="text-white">Days</span></p>
+                        <p><span class="text-white">Days</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">32</span>
-                      <p><span class="text-white">Hours</span></p>
+                        <p><span class="text-white">Hours</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">54</span>
-                      <p><span class="text-white">Minutes</span></p>
+                        <p><span class="text-white">Minutes</span></p>
                       </div>
-                      <div class="-right-5 absolute bg-white w-[1px] h-[40px]"></div>
+                      <div
+                        class="-right-5 absolute bg-white w-[1px] h-[40px]"
+                      ></div>
                     </li>
                     <li class="relative flex items-center">
                       <div>
                         <span class="text-white">33</span>
-                      <p><span class="text-white">Seconds</span></p>
+                        <p><span class="text-white">Seconds</span></p>
                       </div>
-                    
                     </li>
-
                   </ul>
                 </div>
               </div>
@@ -657,44 +732,61 @@
           </div>
         </div>
         <!-- pagination -->
-         <div class="mt-20">
+        <div class="mt-20">
           <ul class="flex justify-center items-center space-x-2 mt-6">
             <li>
-              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
+              <a
+                href="#"
+                class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition"
+              >
                 <i class="fa-angle-left fa-solid"></i>
               </a>
             </li>
-          
+
             <li>
-              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
+              <a
+                href="#"
+                class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition"
+              >
                 1
               </a>
             </li>
-          
+
             <li>
-              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
+              <a
+                href="#"
+                class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition"
+              >
                 2
               </a>
             </li>
-          
+
             <li>
-              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
+              <a
+                href="#"
+                class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition"
+              >
                 3
               </a>
             </li>
             <li>
-              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
+              <a
+                href="#"
+                class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition"
+              >
                 ...
               </a>
             </li>
             <li>
-              <a href="#" class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition">
+              <a
+                href="#"
+                class="bg-white hover:bg-[#ff9822] px-6 py-4 rounded-md text-gray-600 hover:text-white transition"
+              >
                 <i class="fa-angle-right fa-solid"></i>
               </a>
             </li>
           </ul>
-          
-         </div>
+        </div>
       </div>
     </section>
     <!-- event  -->
@@ -865,21 +957,21 @@
 
     <!-- Swiper Initialization -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper('.mySwiper', {
         loop: true,
         autoplay: {
           delay: 5000,
-          disableOnInteraction: false,
+          disableOnInteraction: false
         },
         pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+          el: '.swiper-pagination',
+          clickable: true
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      })
     </script>
   </body>
 </html>
