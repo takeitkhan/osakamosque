@@ -19,84 +19,79 @@
 
 <body>
   <section class="relative w-full h-screen">
-    <div class="top-0 right-0 left-0 z-10 absolute flex justify-center items-center h-[50px] text-white text-center">
-      <div class="flex justify-between mx-auto container">
-        <div class="flex items-center gap-4">
-          <span class="text-[14px]">Follow us:</span>
-          <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="mx-2"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="mx-2"><i class="fab fa-linkedin"></i></a>
-          <a href="#" class="mx-2"><i class="fab fa-google-plus-g"></i></a>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="flex items-center gap-2">
-            <i class="text-[#00401A] text-[12px] fas fa-phone-alt theme-clr"></i>
-            <span class="text-[12px] hover:text-[#00401A] transition">
-              Call us: 123-456-7890
-            </span>
+    <!-- Social & Contact Section -->
+    <div
+      class="top-0 right-0 left-0 z-10 absolute flex md:flex-row flex-col justify-center items-center bg-gray-800 p-2 md:p-0 h-auto md:h-[50px] text-white text-center">
+      <div class="mx-auto px-4 md:px-8 w-full container">
+        <div class="flex md:flex-row flex-col justify-between items-center gap-2 md:gap-4 h-full">
+          <!-- Social Icons -->
+          <div class="flex items-center gap-2 md:gap-4">
+            <span class="text-[12px] md:text-[14px]">Follow Us:</span>
+            <a href="#" class="mx-1 md:mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="mx-1 md:mx-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="mx-1 md:mx-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="mx-1 md:mx-2"><i class="fab fa-google-plus-g"></i></a>
           </div>
-          <div class="flex items-center gap-2">
-            <i class="text-[#00401A] text-[12px] fas fa-envelope theme-clr"></i>
-            <span class="text-[12px] hover:text-[#00401A] transition">
-              Email us: 123@example.com
-            </span>
+          <!-- Contact Info -->
+          <div class="flex md:flex-row flex-col items-center gap-2 md:gap-4 text-[12px]">
+            <div class="flex items-center gap-2">
+              <i class="text-white fas fa-phone-alt theme-clr"></i>
+              <span>Call us: 123-456-7890</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="text-white fas fa-envelope theme-clr"></i>
+              <span>Email us: 123@example.com</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="top-[50px] right-0 left-0 z-10 absolute bg-[rgba(0,0,0,0.5)] h-[120px]">
-      <div class="mx-auto px-8 h-full container">
-        <div class="flex justify-between items-center h-full">
+
+    <!-- Navbar Section -->
+    <div class="top-[50px] right-0 left-0 z-10 absolute bg-[rgba(0,0,0,0.5)] h-auto md:h-[120px]">
+      <div class="mx-auto px-4 md:px-8 h-full container">
+        <div class="flex justify-between items-center py-2 md:py-0 h-full">
+          <!-- Logo -->
           <div class="logo">
-            <a href="index.html" title="Logo" itemprop="url">
-              <img class="h-20" src="images/logo1.png" alt="logo1.png" itemprop="image">
+            <a href="index.html">
+              <img class="h-16 md:h-20" src="images/logo1.png" alt="logo">
             </a>
           </div>
-          <div>
-            <nav>
-              <ul class="flex gap-10 text-white">
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="group relative">
-                  <a href="event.html" class="flex items-center gap-1 cursor-pointer">
-                    Event
-                    <svg class="w-4 h-4 group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd" />
-                    </svg>
-                  </a>
-                  <ul
-                    class="invisible group-hover:visible left-0 absolute bg-white opacity-0 group-hover:opacity-100 mt-2 min-w-[180px] text-black transition-all duration-300">
-                    <li class="group/submenu relative">
-                      <a href="#" class="flex justify-between items-center px-4 py-2 hover:text-[#00401A]">
-                        Upcoming Events
-                        <svg class="w-4 h-4 transition-transform group-hover/submenu:translate-x-1"
-                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd"
-                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                            clip-rule="evenodd" />
-                        </svg>
-                      </a>
-                      <ul
-                        class="invisible group-hover/submenu:visible top-0 left-full absolute bg-white opacity-0 group-hover/submenu:opacity-100 ml-2 min-w-[180px] text-black transition-all duration-300">
-                        <li><a href="#" class="block px-4 py-2 hover:text-[#00401A]">Conference</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:text-[#00401A]">Workshops</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-[#00401A]">Past Events</a></li>
-                    <li><a href="#" class="block hover:bg-gray-200 px-4 py-2">Event Gallery</a></li>
-                  </ul>
-                </li>
 
-                <li><a href="#">Our Courses</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
+          <!-- Hamburger Menu for Mobile -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-white text-2xl">
+              <i class="fas fa-bars"></i>
+            </button>
           </div>
+
+          <!-- Navigation -->
+          <nav id="menu" class="hidden md:flex">
+            <ul class="flex md:flex-row flex-col gap-4 md:gap-10 text-white">
+              <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+              <li class="group relative">
+                <a href="event.html" class="flex items-center gap-1 cursor-pointer">
+                  Event
+                  <svg class="w-4 h-4 group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <!-- Dropdown -->
+                <ul
+                  class="hidden group-hover:block left-0 absolute bg-white mt-2 min-w-[180px] text-black transition-all duration-300">
+                  <li><a href="#" class="block px-4 py-2 hover:text-[#00401A]">Upcoming Events</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:text-[#00401A]">Past Events</a></li>
+                  <li><a href="#" class="block hover:bg-gray-200 px-4 py-2">Event Gallery</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Our Courses</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -199,7 +194,7 @@
 
   <section>
     <!-- About Section -->
-    <div class="pt-[100px]">
+    <div class="py-[100px]">
       <div class="mx-auto px-8 lg:px-12 container">
         <div class="flex md:flex-row lg:flex-row flex-col items-center lg:gap-20 mx-auto lg:px-5">
           <div class="w-full">
@@ -241,7 +236,7 @@
   </section>
 
   <!-- country section -->
-  <section class="pt-[100px]">
+  <section class="bg-[#f4f4f4] pt-[100px]">
     <div class="mx-auto px-8 container">
       <!-- Header -->
       <div class="text-start">
@@ -252,18 +247,13 @@
 
       </div>
 
-      <!-- Grid Layout -->
       <div class="gap-8 grid grid-cols-1 lg:grid-cols-2 mt-8">
-        <!-- Left Section: Image -->
         <div>
           <img class="rounded-lg w-full h-full object-cover" src="images/prayer-time-mockp.png"
             alt="Prayer Time Image" />
         </div>
-
-        <!-- Right Section: Selectors & Table -->
         <div>
-          <!-- Select Options -->
-          <div class="flex flex-wrap justify-center lg:justify-end gap-4 mb-6">
+          <!-- <div class="flex flex-wrap gap-4 mb-6">
             <select name="country" class="bg-[#00401A] px-4 py-2 rounded-md focus:outline-none text-[14px] text-white">
               <option value="" class="bg-white text-black">Select Country</option>
               <option value="USA" class="bg-white text-black">USA</option>
@@ -279,28 +269,33 @@
               <option value="Toronto" class="bg-white text-black">Toronto</option>
               <option value="Berlin" class="bg-white text-black">Berlin</option>
             </select>
-          </div>
-
-
-
-          <!-- Table Section -->
+          </div> -->
           <div class="overflow-x-auto">
-            <h4 class="text-[13px]">Showing Results: Namaz Timings of Select Location</h4>
+            <h4 class="pb-10 text-[20px] text-center">Namaz Timings of Osaka Mosque</h4>
             <table class="rounded-lg w-full border-collapse">
               <thead>
-                <tr class="text-[]">
-                  <th class="p-[10px] text-[18px] text-[20px] text-center">
+                <tr>
+                  <th class="p-[10px] text-[18px] text-center">
                     Name of Salat
-                    <div> <img class="mt-2" src="images/pshape.png" alt="Design Shape" /></div>
+                    <div class="flex justify-center">
+                      <img class="mt-2" src="images/pshape.png" alt="Design Shape" />
+                    </div>
                   </th>
-                  <th class="p-[10px] text-[18px] text-[20px] text-center"> Azan Time
-                    <div> <img class="mt-2" src="images/pshape.png" alt="Design Shape" /></div>
+                  <th class="p-[10px] text-[18px] text-center">
+                    Azan Time
+                    <div class="flex justify-center">
+                      <img class="mt-2" src="images/pshape.png" alt="Design Shape" />
+                    </div>
                   </th>
-                  <th class="p-[10px] text-[18px] text-[20px] text-center"> Prayer Time
-                    <div> <img class="mt-2" src="images/pshape.png" alt="Design Shape" /></div>
+                  <th class="p-[10px] text-[18px] text-center">
+                    Prayer Time
+                    <div class="flex justify-center">
+                      <img class="mt-2" src="images/pshape.png" alt="Design Shape" />
+                    </div>
                   </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr class="hover:text-[#00401A] text-center transition">
                   <td class="p-[10px] text-[18px]">Fajr</td>
@@ -333,13 +328,8 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- country section -->
-
-
-  <!-- offer section -->
-  <section class="pt-[100px]">
+  </section>  
+  <section class="bg-[#f4f4f4] pt-[100px]">
     <div class="mx-auto px-8 container">
       <div class="flex flex-col items-center">
         <span class="font-bold text-[#00401A] text-[20px]">Our Worldwide</span>
@@ -436,7 +426,7 @@
       </div>
     </div>
   </section>
-  <section class="pt-[100px]" style>
+  <section class="pt-[100px]">
     <div
       style="background-image: url(images/parallax2.jpg); background-size: cover; background-position: center; background-attachment: fixed;"
       class="relative bg-cover bg-no-repeat bg-center bg-fixed py-20">
@@ -496,7 +486,7 @@
     </div>
 
   </section>
-  <section class="pt-[100px]">
+  <section class="bg-[#f4f4f4] py-[100px]">
     <div class="mx-auto px-8 container">
       <div class="mb-12 text-center">
         <span class="font-bold text-[#00401A] text-[20px]">Our Blog</span>
@@ -514,17 +504,25 @@
             <div>
               <div class="flex flex-col gap-3 p-4">
                 <h5 itemprop=" ">
-                  <a class="text-[#222] text-[20px] hover:text-[#00401A] transition" href="blog-detail.html">Is Islam a
-                    Liberal Philosophy?</a>
+                  <a class="text-[#222] text-[20px] hover:text-[#00401A] transition" href="blog-detail.html">
+                    Is Islam a Liberal Philosophy?
+                  </a>
                 </h5>
                 <ul class="flex items-center gap-3 text-[#666] text-[12px]">
-                  <li><i class="text-[#00401A] far fa-calendar-alt theme-clr"></i> Nov 17, 2023</li>
-                  <li><i class="text-[#00401A] far fa-user theme-clr"></i><a href="#" title="" itemprop="url">William
-                      Blake</a></li>
+                  <li>
+                    <i class="text-[#00401A] far fa-calendar-alt theme-clr"></i> Nov 17, 2023
+                  </li>
+                  <li>
+                    <i class="text-[#00401A] far fa-user theme-clr"></i>
+                    <a href="#" title="" itemprop="url">
+                      William Blake
+                    </a>
+                  </li>
                 </ul>
                 <p itemprop="description">Lorem ipsum dolor sit amet, conec tetur adipisicing elit sed do eiusd.</p>
-                <a href="blog-detail.html" class="font-[400] text-[#555] text-[15px] hover:text-[#00401A]">View
-                  Details</a>
+                <a href="#" class="font-[400] text-[#555] text-[15px] hover:text-[#00401A]">
+                  View Details
+                </a>
               </div>
             </div>
           </div>
@@ -536,17 +534,25 @@
             <div>
               <div class="flex flex-col gap-3 p-4">
                 <h5 itemprop=" ">
-                  <a class="text-[#222] text-[20px] hover:text-[#00401A] transition" href="blog-detail.html">Is Islam a
-                    Liberal Philosophy?</a>
+                  <a class="text-[#222] text-[20px] hover:text-[#00401A] transition" href="blog-detail.html">
+                    Is Islam a Liberal Philosophy?
+                  </a>
                 </h5>
                 <ul class="flex items-center gap-3 text-[#666] text-[12px]">
-                  <li><i class="text-[#00401A] far fa-calendar-alt theme-clr"></i> Nov 17, 2023</li>
-                  <li><i class="text-[#00401A] far fa-user theme-clr"></i><a href="#" title="" itemprop="url">William
-                      Blake</a></li>
+                  <li>
+                    <i class="text-[#00401A] far fa-calendar-alt theme-clr"></i> Nov 17, 2023
+                  </li>
+                  <li>
+                    <i class="text-[#00401A] far fa-user theme-clr"></i>
+                    <a href="#" title="" itemprop="url">
+                      William Blake
+                    </a>
+                  </li>
                 </ul>
                 <p itemprop="description">Lorem ipsum dolor sit amet, conec tetur adipisicing elit sed do eiusd.</p>
-                <a href="blog-detail.html" class="font-[400] text-[#555] text-[15px] hover:text-[#00401A]">View
-                  Details</a>
+                <a href="#" class="font-[400] text-[#555] text-[15px] hover:text-[#00401A]">
+                  View Details
+                </a>
               </div>
             </div>
           </div>
@@ -560,26 +566,26 @@
                   style="background-image: url(images/event-img1-1.jpg); background-color: rgba(0, 0, 0, 0.8);">
                 </div>
                 <div class="z-10 relative flex items-center gap-4 transition-all duration-300">
-                  <div class="flex flex-col">
-                    <span class="font-[700] text-[#00401A] text-[50px]">17
-
+                  <div class="flex flex-col group-hover:text-white">
+                    <span class="font-[700] text-[50px]">
+                      17
                     </span>
                     <i class="text-[18px]">May</i>
                   </div>
                   <div>
                     <h5 class="mt-2">
-                      <a class="font-semibold text-[18px] text-gray-900 hover:text-[#00401A] group-hover:text-white transition-colors duration-300"
-                        href="event-detail.html">
+                      <a class="font-semibold text-[18px] text-gray-900 hover:text-[#6a994e] group-hover:text-white transition-colors duration-300"
+                        href="#">
                         Importance Of Prayer In Islam
                       </a>
                     </h5>
                     <ul
                       class="flex gap-3 mt-2 text-[12px] text-gray-600 group-hover:text-white transition-colors duration-300 pst-mta">
-                      <li><i class="mr-1 text-[#00401A] fas fa-map-marker-alt theme-clr"></i> Dehli, Jamia Mosque</li>
-                      <li><i class="mr-1 text-[#00401A] far fa-clock theme-clr"></i> 04:00 pm - 08:00 pm</li>
+                      <li><i class="mr-1 fas fa-map-marker-alt theme-clr"></i> Dehli, Jamia Mosque</li>
+                      <li><i class="mr-1 far fa-clock theme-clr"></i> 04:00 pm - 08:00 pm</li>
                     </ul>
-                    <a href="event-detail.html"
-                      class="inline-block mt-4 text-[#555] text-[14px] hover:text-[#00401A] group-hover:text-white transition-colors duration-300">
+                    <a href="#"
+                      class="inline-block mt-4 hover:text-[#6a994e] group-hover:text-white transition-colors duration-300">
                       Event Details
                     </a>
                   </div>
@@ -593,26 +599,26 @@
                   style="background-image: url(images/event-img1-1.jpg); background-color: rgba(0, 0, 0, 0.8);">
                 </div>
                 <div class="z-10 relative flex items-center gap-4 transition-all duration-300">
-                  <div class="flex flex-col">
-                    <span class="font-[700] text-[#00401A] text-[50px]">17
-
+                  <div class="flex flex-col group-hover:text-white">
+                    <span class="font-[700] text-[50px]">
+                      17
                     </span>
                     <i class="text-[18px]">May</i>
                   </div>
                   <div>
                     <h5 class="mt-2">
-                      <a class="font-semibold text-[18px] text-gray-900 hover:text-[#00401A] group-hover:text-white transition-colors duration-300"
-                        href="event-detail.html">
+                      <a class="font-semibold text-[18px] text-gray-900 hover:text-[#6a994e] group-hover:text-white transition-colors duration-300"
+                        href="#">
                         Importance Of Prayer In Islam
                       </a>
                     </h5>
                     <ul
                       class="flex gap-3 mt-2 text-[12px] text-gray-600 group-hover:text-white transition-colors duration-300 pst-mta">
-                      <li><i class="mr-1 text-[#00401A] fas fa-map-marker-alt theme-clr"></i> Dehli, Jamia Mosque</li>
-                      <li><i class="mr-1 text-[#00401A] far fa-clock theme-clr"></i> 04:00 pm - 08:00 pm</li>
+                      <li><i class="mr-1 fas fa-map-marker-alt theme-clr"></i> Dehli, Jamia Mosque</li>
+                      <li><i class="mr-1 far fa-clock theme-clr"></i> 04:00 pm - 08:00 pm</li>
                     </ul>
-                    <a href="event-detail.html"
-                      class="inline-block mt-4 text-[#555] text-[14px] hover:text-[#00401A] group-hover:text-white transition-colors duration-300">
+                    <a href="#"
+                      class="inline-block mt-4 hover:text-[#6a994e] group-hover:text-white transition-colors duration-300">
                       Event Details
                     </a>
                   </div>
@@ -825,7 +831,6 @@
             <div class="lg:-top-44 right-0 bottom-0 left-0 absolute mx-auto px-4 container">
               <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white px-8 py-10 rounded-lg">
 
-                <!-- About Us Section -->
                 <div>
                   <h2 class="mb-4 font-semibold text-xl">About Us</h2>
                   <p class="mb-4 text-gray-600">
@@ -839,10 +844,29 @@
                   </div>
                 </div>
 
-                <!-- Latest Blogs Section -->
                 <div>
                   <h2 class="mb-4 font-semibold text-xl">Latest Blogs</h2>
-                  <div class="flex gap-3 p-4 rounded-lg">
+                  <div class="flex gap-3 pb-2 rounded-lg">
+                    <div>
+                      <img src="images/rcnt-img1.jpg" alt="Blog Image" class="rounded-md w-full h-16 object-cover">
+                    </div>
+                    <div>
+                      <h3 class="mt-2 font-[400] text-[14px] hover-[#00401A]">Help the poor people</h3>
+                      <p><span class="text-[#00401A] text-[12px]"> <i class="mr-1 far fa-calendar-alt"></i> March 25,
+                          2025</span></p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3 pb-2 rounded-lg">
+                    <div>
+                      <img src="images/rcnt-img1.jpg" alt="Blog Image" class="rounded-md w-full h-16 object-cover">
+                    </div>
+                    <div>
+                      <h3 class="mt-2 font-[400] text-[14px] hover-[#00401A]">Help the poor people</h3>
+                      <p><span class="text-[#00401A] text-[12px]"> <i class="mr-1 far fa-calendar-alt"></i> March 25,
+                          2025</span></p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3 pb-2 rounded-lg">
                     <div>
                       <img src="images/rcnt-img1.jpg" alt="Blog Image" class="rounded-md w-full h-16 object-cover">
                     </div>
@@ -899,16 +923,17 @@
           </div>
           <div class="bg-[#00401A] py-5">
             <div class="mx-auto px-8 container">
-              <div class="flex lg:flex-row flex-col justify-center gap-4 icons">
+              <!-- <div class="flex lg:flex-row flex-col justify-center gap-4 icons">
                 <h4 class="flex-1 text-[24px] text-white text-center lg:text-start">Subscribe, For Weekly Updates</h4>
                 <div class="relative flex-1 lg:flex-2">
                   <input type="text" placeholder="Enter your email address"
                     class="bg-white px-[45px] py-[10px] border border-white rounded-full focus:outline-none w-full" />
                   <button
-                    class="top-0 right-0 bottom-0 absolute bg-[#80b918] hover:bg-black ml-2 px-[45px] py-[10px] rounded-full text-white uppercase tracking-tighter transition">SIGN
-                    UP</button>
+                    class="top-0 right-0 bottom-0 absolute bg-[#80b918] hover:bg-black ml-2 px-[45px] py-[10px] rounded-full text-white uppercase tracking-tighter transition">
+                    SIGN UP
+                  </button>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -921,6 +946,7 @@
   </section>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+    document.documentElement.style.setProperty('--swiper-navigation-sides-offset', '0px');
     var swiper = new Swiper(".mySwiper", {
       loop: true,
       autoplay: {
@@ -935,6 +961,10 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+    });
+
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("menu").classList.toggle("hidden");
     });
   </script>
 </body>
