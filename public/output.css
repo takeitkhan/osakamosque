@@ -317,9 +317,6 @@
   .inline-block {
     display: inline-block;
   }
-  .table {
-    display: table;
-  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -394,9 +391,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -502,9 +496,6 @@
   .border-\[\#ddd\] {
     border-color: #ddd;
   }
-  .border-\[\#ff9822\] {
-    border-color: #ff9822;
-  }
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
@@ -525,9 +516,6 @@
   }
   .bg-\[\#f8f9fa\] {
     background-color: #f8f9fa;
-  }
-  .bg-\[\#ff9822\] {
-    background-color: #ff9822;
   }
   .bg-\[rgba\(0\,0\,0\,0\.5\)\] {
     background-color: rgba(0,0,0,0.5);
@@ -737,9 +725,6 @@
   .text-\[\#ddd\] {
     color: #ddd;
   }
-  .text-\[\#ff9822\] {
-    color: #ff9822;
-  }
   .text-black {
     color: var(--color-black);
   }
@@ -755,9 +740,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -769,10 +751,6 @@
   }
   .opacity-80 {
     opacity: 80%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
@@ -853,13 +831,6 @@
       }
     }
   }
-  .group-hover\:bg-\[\#5d2b00\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-color: #5d2b00;
-      }
-    }
-  }
   .group-hover\:bg-\[\#00401A\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -874,13 +845,6 @@
       }
     }
   }
-  .group-hover\:bg-\[\#ff9822\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-color: #ff9822;
-      }
-    }
-  }
   .group-hover\:bg-black {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -892,13 +856,6 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         background-color: var(--color-white);
-      }
-    }
-  }
-  .group-hover\:text-\[\#5d2b00\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: #5d2b00;
       }
     }
   }
@@ -987,13 +944,6 @@
       }
     }
   }
-  .hover\:bg-\[\#ff9822\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #ff9822;
-      }
-    }
-  }
   .hover\:bg-black {
     &:hover {
       @media (hover: hover) {
@@ -1012,13 +962,6 @@
     &:hover {
       @media (hover: hover) {
         color: #00401A;
-      }
-    }
-  }
-  .hover\:text-\[\#ff9822\] {
-    &:hover {
-      @media (hover: hover) {
-        color: #ff9822;
       }
     }
   }
@@ -1202,11 +1145,6 @@
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-duration {
   syntax: "*";
