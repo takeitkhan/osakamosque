@@ -7,6 +7,7 @@
 body {
   font-family: 'Merriweather', serif;
   background-color: #f8f9fa;
+  width: 100%;
 }
 
 p {
@@ -68,6 +69,27 @@ ul li > a:hover {
 
 @media (min-width: 500px) {
   .islamic-scholar {
+    margin-bottom: 600px;
    
+  }
+}
+@media (min-width: 768px) {
+  .islamic-scholar {
+    margin-bottom: 100px;
+   
+  }
+}
+@media (min-width: 1024px) {
+  .islamic-scholar {
+    margin-bottom: 100px;
+   
+  }
+}
+
+
+
+@media (max-width: 420px){
+  .pillar-grid{
+    grid-template-columns: 1fr;
   }
 }
