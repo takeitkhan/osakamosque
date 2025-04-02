@@ -324,9 +324,6 @@
   .inline-block {
     display: inline-block;
   }
-  .table {
-    display: table;
-  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -401,9 +398,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -772,9 +766,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -786,10 +777,6 @@
   }
   .opacity-80 {
     opacity: 80%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
@@ -1043,6 +1030,11 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .sm\:text-\[38px\] {
+    @media (width >= 40rem) {
+      font-size: 38px;
+    }
+  }
   .md\:mx-2 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 2);
@@ -1116,6 +1108,11 @@
   .md\:text-\[14px\] {
     @media (width >= 48rem) {
       font-size: 14px;
+    }
+  }
+  .md\:text-\[42px\] {
+    @media (width >= 48rem) {
+      font-size: 42px;
     }
   }
   .lg\:absolute {
@@ -1261,28 +1258,41 @@ p {
   background-color: var(--primary-clr) !important;
   color: white;
   cursor: pointer;
-  padding: 20px;
   transition: all 600ms ease;
 }
 .swiper-button-next {
-  border-top-left-radius: 100%;
-  border-bottom-left-radius: 100%;
   right: 0;
+  -webkit-border-radius: 0 30px 30px 0;
+  border-radius: 30px 0px 0px 30px;
+  padding: 30px 20px;
+  line-height: 60px !important;
 }
 .swiper-button-prev {
-  border-top-right-radius: 100%;
-  border-bottom-right-radius: 100%;
   left: 0;
+  -webkit-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  padding: 30px 20px;
+  line-height: 60px !important;
 }
 .swiper-button-next:hover, .swiper-button-prev:hover {
   background-color: var(--secondary-clr) !important;
 }
 .swiper-button-prev:after, .swiper-button-next:after {
-  font-size: 18px !important;
+  font-size: 12px !important;
   color: #FFFFFF;
 }
 ul li > a:hover {
   color: #80b918;
+}
+@media (max-width: 320px) {
+  .islamic-scholar {
+    margin-bottom: 850px;
+  }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  .islamic-scholar {
+    margin-bottom: 750px;
+  }
 }
 @property --tw-space-x-reverse {
   syntax: "*";
@@ -1305,11 +1315,6 @@ ul li > a:hover {
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-duration {
   syntax: "*";
