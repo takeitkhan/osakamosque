@@ -16,6 +16,26 @@ p {
   line-height: 28px;
 }
 
+@media (max-width: 770px) {
+  .swipper-next-btn,
+  .swipper-prev-btn{
+  
+    display: none !important;
+  }
+  
+  .swipper-next-btn{
+
+    display: none !important;
+  }
+  
+  .swipper-prev-btn {
+
+    display: none !important;
+    
+  
+  }
+}
+
 .swiper-button-next,
 .swiper-button-prev{
   background-color: var(--primary-clr) !important;

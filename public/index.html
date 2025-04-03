@@ -22,9 +22,20 @@
     <!-- Social & Contact Section -->
     <div
       class="top-0 right-0 left-0 z-10 absolute flex md:flex-row flex-col justify-center items-center bg-gray-800 p-2 md:p-0 h-auto md:h-[50px] text-white text-center">
-      <div class="mx-auto px-4 md:px-8 w-full container">
-        <div class="flex md:flex-row flex-col justify-between items-center gap-2 md:gap-4 h-full">
+      <div class="mx-auto px-4 md:px-2 lg:px-8 w-full container">
+        <div class="flex md:flex-row flex-col justify-between lg:items-center gap-2 md:gap-4 h-full">
+
+          <div class="block lg:hidden w-full">
+            <div class="flex items-center gap-2">
+              <a href="#" class=""><i class="fab fa-twitter text-sm"></i></a>
+              <a href="#" class=""><i class="fab fa-facebook text-sm"></i></a>
+              <a href="#" class=""><i class="fab fa-facebook text-sm"></i></a>
+              <input class="outline-none text-[10px] border-none h-full w-full " placeholder="Enter your keyword" type="text">
+              <i class="fa-solid fa-magnifying-glass text-sm"></i>
+            </div>
+          </div>
           <!-- Social Icons -->
+         <div class="lg:block hidden">
           <div class="flex items-center gap-2 md:gap-4">
             <span class="text-[12px] md:text-[14px]">Follow Us:</span>
             <a href="#" class="mx-1 md:mx-2"><i class="fab fa-twitter"></i></a>
@@ -32,15 +43,18 @@
             <a href="#" class="mx-1 md:mx-2"><i class="fab fa-linkedin"></i></a>
             <a href="#" class="mx-1 md:mx-2"><i class="fab fa-google-plus-g"></i></a>
           </div>
+         </div>
           <!-- Contact Info -->
-          <div class="flex md:flex-row flex-col items-center gap-2 md:gap-4 text-[12px]">
-            <div class="flex items-center gap-2">
-              <i class="text-white fas fa-phone-alt theme-clr"></i>
-              <span>Call us: 123-456-7890</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <i class="text-white fas fa-envelope theme-clr"></i>
-              <span>Email us: 123@example.com</span>
+          <div class="lg:block hidden">
+            <div class="flex md:flex-row flex-col items-center gap-2 md:gap-4 text-[12px]">
+              <div class="flex items-center gap-2">
+                <i class="text-white fas fa-phone-alt theme-clr"></i>
+                <span>Call us: 123-456-7890</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="text-white fas fa-envelope theme-clr"></i>
+                <span>Email us: 123@example.com</span>
+              </div>
             </div>
           </div>
         </div>
@@ -48,59 +62,82 @@
     </div>
 
     <!-- Navbar Section -->
-    <div class="top-[50px] right-0 left-0 z-10 absolute bg-[rgba(0,0,0,0.5)] h-auto md:h-[120px]">
-      <div class="mx-auto px-4 md:px-8 h-full container">
-        <div class="flex justify-between items-center py-2 md:py-0 h-full">
-          <!-- Logo -->
-          <div class="logo">
-            <a href="index.html">
-              <img class="h-16 md:h-20" src="images/logo1.png" alt="logo">
-            </a>
-          </div>
-
-          <!-- Hamburger Menu for Mobile -->
-          <div class="md:hidden">
-            <button id="menu-toggle" class="text-white text-2xl">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-
-          <!-- Navigation -->
-          <nav id="menu" class="hidden md:flex">
-            <ul class="flex md:flex-row flex-col gap-4 md:gap-10 text-white">
-              <li><a href="index.html" class="hover:text-red-400">Home</a></li>
-              <li class="group relative">
-                <a href="event.html" class="flex items-center gap-1 cursor-pointer">
-                  Event
-                  <svg class="w-4 h-4 group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </a>
-                <!-- Dropdown -->
-                <ul
-                  class="hidden group-hover:block left-0 absolute bg-white mt-2 min-w-[180px] text-black transition-all duration-300">
-                  <li><a href="#" class="block px-4 py-2 hover:text-[#00401A]">Upcoming Events</a></li>
-                  <li><a href="#" class="block px-4 py-2 hover:text-[#00401A]">Past Events</a></li>
-                  <li><a href="#" class="block hover:bg-gray-200 px-4 py-2">Event Gallery</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Our Courses</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+    
+  
+  <!-- Navbar Section -->
+  <div class="absolute top-[40px] md:top-[50px] right-0 left-0 z-10 bg-[rgba(0,0,0,0.4)] py-4 shadow-md">
+    <div class="mx-auto px-6 lg:px-12 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img class="h-12 md:h-16" src="images/logo1.png" alt="logo">
+        </a>
       </div>
+
+      <!-- Hamburger Menu Button (Mobile) -->
+      <button id="menuToggle" class="md:hidden text-white text-2xl">
+        ☰
+      </button>
+
+      <!-- Navigation (Desktop) -->
+      <nav class="hidden md:flex">
+        <ul class="flex gap-6 text-white">
+          <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+          <li class="relative group">
+            <a class="cursor-pointer flex items-center gap-1">
+              Event
+              <svg class="w-4 h-4 group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+            <!-- Dropdown -->
+            <ul class="hidden group-hover:block absolute bg-white mt-1 min-w-[180px] text-black transition-all duration-300 shadow-lg">
+              <li><a href="#" class="block px-4 py-2 hover:text-[#00401A]">Upcoming Events</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:text-[#00401A]">Past Events</a></li>
+              <li><a href="#" class="block hover:bg-gray-200 px-4 py-2">Event Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Our Courses</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </div>
+
+  <!-- Sidebar (Mobile) -->
+  <div id="sidebar" class="fixed right-[-100%] top-0 w-64 h-full bg-black shadow-lg transition-all duration-300 z-20">
+    <div class="flex justify-between items-center px-6 py-4 border-b">
+      <h2 class="text-lg font-semibold text-white">Menu</h2>
+      <button id="closeMenu" class="text-2xl text-white">&times;</button>
+    </div>
+    <ul class="flex flex-col gap-4 p-6 text-white">
+      <li><a href="index.html" class="block hover:text-red-500">Home</a></li>
+      <li class="relative">
+        <button id="eventToggle" class="w-full text-left flex justify-between items-center text-white">
+          Event
+          <span id="eventArrow">▼</span>
+        </button>
+        <ul id="eventDropdown" class="hidden text-whit pl-4 mt-2 border-l-2 border-gray-300">
+          <li><a href="#" class="block py-1">Upcoming Events</a></li>
+          <li><a href="#" class="block py-1">Past Events</a></li>
+          <li><a href="#" class="block py-1">Event Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="block hover:text-red-500">Our Courses</a></li>
+      <li><a href="#" class="block hover:text-red-500">Our Services</a></li>
+      <li><a href="#" class="block hover:text-red-500">Contact</a></li>
+    </ul>
+  </div>
     <div class="w-full h-full swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="relative swiper-slide">
           <img src="images/slide-4.jpg" class="w-full h-full object-cover" alt="Slide 1" />
           <div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-white text-center">
-            <div class="flex flex-col justify-center items-center gap-4 w-full lg:max-w-[50%]">
+            <div class="flex flex-col justify-center items-center mt-[280px] gap-4 w-full lg:max-w-[50%]">
               <img src="images//bsml-txt.png" alt="" />
 
               <h1>
@@ -123,7 +160,7 @@
         <div class="relative swiper-slide">
           <img src="images/slide-4.jpg" class="w-full h-full object-cover" alt="Slide 1" />
           <div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-white text-center">
-            <div class="flex flex-col justify-center items-center gap-4 w-full lg:max-w-[50%]">
+            <div class="flex flex-col justify-center items-center mt-[280px] gap-4 w-full lg:max-w-[50%]">
               <img src="images//bsml-txt.png" alt="" />
 
               <h1>
@@ -133,7 +170,9 @@
                 He Raised the Sky and Set Up the Balance
               </h3>
               <img src="images/pshape.png" alt="" />
-              <span class="font-semibold text-[18px]">(Surah Al-Rahmaan Verse 7)</span>
+              <span class="font-semibold text-[18px]">
+                (Surah Al-Rahmaan Verse 7)
+              </span>
 
               <a href="#"
                 class="bg-[#00401A] hover:bg-[#80b918] mt-6 px-[45px] py-[14px] rounded-md font-bold text-[15px] transition">Learn
@@ -144,7 +183,7 @@
         <div class="relative swiper-slide">
           <img src="images/slide-4.jpg" class="w-full h-full object-cover" alt="Slide 1" />
           <div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-white text-center">
-            <div class="flex flex-col justify-center items-center gap-4 w-full lg:max-w-[50%]">
+            <div class="flex flex-col justify-center items-center mt-[280px] gap-4 w-full lg:max-w-[50%]">
               <img src="images//bsml-txt.png" alt="" />
 
               <h1>
@@ -154,8 +193,9 @@
                 He Raised the Sky and Set Up the Balance
               </h3>
               <img src="images/pshape.png" alt="" />
-              <span class="font-semibold text-[18px]">(Surah Al-Rahmaan Verse 7)</span>
-
+              <span class="font-semibold text-[18px]">
+                (Surah Al-Rahmaan Verse 7)
+              </span>
               <a href="#"
                 class="bg-[#00401A] hover:bg-[#80b918] mt-6 px-[45px] py-[14px] rounded-md font-bold text-[15px] transition">Learn
                 More</a>
@@ -165,7 +205,7 @@
         <div class="relative swiper-slide">
           <img src="images/slide-4.jpg" class="w-full h-full object-cover" alt="Slide 1" />
           <div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-white text-center">
-            <div class="flex flex-col justify-center items-center gap-4 w-full lg:max-w-[50%]">
+            <div class="flex flex-col justify-center items-center mt-[280px] gap-4 w-full lg:max-w-[50%]">
               <img src="images//bsml-txt.png" alt="" />
 
               <h1>
@@ -175,7 +215,9 @@
                 He Raised the Sky and Set Up the Balance
               </h3>
               <img src="images/pshape.png" alt="" />
-              <span class="font-semibold text-[18px]">(Surah Al-Rahmaan Verse 7)</span>
+              <span class="font-semibold text-[18px]">
+                (Surah Al-Rahmaan Verse 7)
+              </span>
 
               <a href="#"
                 class="bg-[#00401A] hover:bg-[#80b918] mt-6 px-[45px] py-[14px] rounded-md font-bold text-[15px] transition">Learn
@@ -183,19 +225,20 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <!-- Swiper Pagination & Navigation -->
       <!-- <div class="swiper-pagination"></div> -->
-      <div class="text-white swiper-button-next"></div>
-      <div class="text-white swiper-button-prev"></div>
+      <div class="text-white swipper-next-btn swiper-button-next"></div>
+      <div class="text-white swipper-prev-btn swiper-button-prev"></div>
     </div>
   </section>
 
   <section>
     <!-- About Section -->
     <div class="py-[100px]">
-      <div class="mx-auto px-8 lg:px-12 container">
+      <div class="mx-auto px-2 lg:px-8 lg:px-12 container">
         <div class="flex md:flex-row lg:flex-row flex-col items-center lg:gap-20 mx-auto lg:px-5">
           <div class="w-full">
             <div class="relative inset-0 w-full lg:w-[510px] h-full lg:h-[390px]">
@@ -237,7 +280,7 @@
 
   <!-- country section -->
   <section class="bg-[#f4f4f4] pt-[100px]">
-    <div class="mx-auto px-8 container">
+    <div class="mx-auto px-2 lg:px-8 container">
       <!-- Header -->
       <div class="text-start">
         <span class="font-bold text-[#00401A] text-[20px]">Select Country & City For</span>
@@ -330,7 +373,7 @@
     </div>
   </section>  
   <section class="bg-[#f4f4f4] pt-[100px]">
-    <div class="mx-auto px-8 container">
+    <div class="mx-auto px-2 lg:px-8 container">
       <div class="flex flex-col items-center">
         <span class="font-bold text-[#00401A] text-[20px]">Our Worldwide</span>
         <h2 class="font-semibold text-[#222] text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px]">Offered Services</h2>
@@ -432,7 +475,7 @@
       class="relative bg-cover bg-no-repeat bg-center bg-fixed py-20">
       <div class="absolute inset-0 bg-black opacity-70"></div>
 
-      <div class="z-10 relative mx-auto px-8 container">
+      <div class="z-10 relative mx-auto px-2 lg:px-8 container">
         <div class="flex flex-col items-center">
           <span class="font-bold text-[#80b918] text-[20px]">About Essential</span>
           <h2 class="font-semibold  text-white text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px]">Pillar Of Islam</h2>
@@ -487,7 +530,7 @@
 
   </section>
   <section class="bg-[#f4f4f4] py-[100px]">
-    <div class="mx-auto px-8 container">
+    <div class="mx-auto px-2 lg:px-8 container">
       <div class="mb-12 text-center">
         <span class="font-bold text-[#00401A] text-[20px]">Our Blog</span>
         <h2 class="font-semibold text-[#222] text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px]">Latest Articles</h2>
@@ -653,10 +696,10 @@
             <div class="text-white swiper-button-next"></div>
           </div>
         </div>
-        <div class="z-10 mx-auto px-8 py-10 text-white container">
+        <div class="z-10 mx-auto px-2  py-10 text-white container">
           <div class="flex flex-wrap gap-6">
             <!-- Left Section: Donation Info -->
-            <div class="w-full lg:w-9/12">
+            <div class="w-full ">
               <span class="font-bold text-[#00401A] text-[20px]">Give Food & Shelter To Poor</span>
               <h2 class="mt-2 font-semibold text-[#222] text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px]">Make Your Donation</h2>
               <img class="mt-4" src="images/pshape.png" alt="Design Shape" />
@@ -673,15 +716,15 @@
             </div>
 
             <!-- Right Section: Form -->
-            <div class="w-full lg:w-9/12">
+            <div class="w-full px-2 lg:px-0 lg:w-[80%] 2xl:w-[55%] ">
               <div>
-                <div class='flex flex-col md:flex-row gap-4 mt-6'>
+                <div class='flex mb-4 gap-4 flex-col md:flex-row'>
                   <input type="text" placeholder="Enter your name"
                     class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none w-full text-[#222] text-[14px] transition-all duration-300">
                   <input type="text" placeholder="Enter your email"
                     class="px-4 py-2  border border-gray-300 rounded-lg focus:outline-none w-full text-[#222] text-[14px] transition-all duration-300">
                 </div>
-                <div class="flex flex-col md:flex-row gap-4 mt-2">
+                <div class="flex gap-4 flex-col md:flex-row">
                   <input type="text" placeholder="Donation Amount"
                     class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none w-full text-[#222] text-[14px] transition-all duration-300">
                   <input type="text" placeholder="Message"
@@ -724,7 +767,7 @@
   </section>
   <section class="pt-[100px]">
 
-    <div class="mx-auto px-8 container">
+    <div class="mx-auto px-2 lg:px-8 container">
       <div class="mb-12 text-center">
         <span class="font-bold text-[#00401A] text-[20px]">Our Expert</span>
         <h2 class="mt-2 font-semibold text-[#222] text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px]">Islamic Scholars</h2>
@@ -832,13 +875,13 @@
       <div class="absolute pt-[270px] bg-[#00401A] right-0 lg:block hidden md:top-50 z-10 bottom-0 left-0 h-full">
         
       </div>
-     <div class="absolute -top-44 z-0">
+     <div class="absolute -top-20 sm:-top-40 lg:-top-44 z-0">
       <img class="h-full w-full" src="images/bg-vector.png" alt="">
      </div>
      <div class="">  
-      <div class="container mx-auto px-8 absolute z-20 left-0 right-0 block">
+      <div class="container px-2 lg:px-8 mx-auto  absolute z-20 left-0 right-0 block">
       <div class=" ">
-        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white px-8 py-10 rounded-lg">
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white px-4 py-10 rounded-lg">
   
           <div>
             <h2 class="mb-4 font-semibold text-xl">About Us</h2>
@@ -976,8 +1019,32 @@
       },
     });
 
-    document.getElementById("menu-toggle").addEventListener("click", function () {
-      document.getElementById("menu").classList.toggle("hidden");
+      // Sidebar Toggle
+    const menuToggle = document.getElementById("menuToggle");
+    const closeMenu = document.getElementById("closeMenu");
+    const sidebar = document.getElementById("sidebar");
+
+    menuToggle.addEventListener("click", () => {
+      sidebar.style.right = "0";
+    });
+
+    closeMenu.addEventListener("click", () => {
+      sidebar.style.right = "-100%";
+    });
+
+    // Event Dropdown Toggle
+    const eventToggle = document.getElementById("eventToggle");
+    const eventDropdown = document.getElementById("eventDropdown");
+    const eventArrow = document.getElementById("eventArrow");
+
+    eventToggle.addEventListener("click", () => {
+      if (eventDropdown.classList.contains("hidden")) {
+        eventDropdown.classList.remove("hidden");
+        eventArrow.textContent = "▲";
+      } else {
+        eventDropdown.classList.add("hidden");
+        eventArrow.textContent = "▼";
+      }
     });
   </script>
 </body>
