@@ -118,3 +118,53 @@ ul li > a:hover {
   }
 }
 /* event section */
+
+/* footer */
+@media (min-width: 0px) and (max-width: 600px) {
+  .p-footer {
+    padding-top: 54rem;
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .p-footer {
+    padding-top: 50rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .p-footer {
+    padding-top: 25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-footer {
+    padding-top: 12rem;
+  }
+}
+
+@media (min-width: 1080px)  {
+  .p-footer{
+    padding-top: 15rem;
+  }
+}
+
+/* footer */
+
+/* end of footer */
+@media (min-width: 0px) and (max-width: 484px) {
+  .btn-hidden{
+    display: none;
+  }
+  .btn-visible{
+    display: block;
+  }
+}
+
+@media (min-width: 485px) {
+  .btn-hidden{
+    display: block;
+  }
+  .btn-visible{
+    display: none;
+  }
+}
