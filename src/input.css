@@ -110,3 +110,11 @@ ul li > a:hover {
   }
 }
 /* offer section */
+
+/* event section */
+@media (min-width: 570px) and (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* event section */
