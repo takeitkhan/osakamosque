@@ -552,8 +552,11 @@
   .bg-\[\#f8f9fa\] {
     background-color: #f8f9fa;
   }
-  .bg-\[rgba\(0\,0\,0\,0\.4\)\] {
-    background-color: rgba(0,0,0,0.4);
+  .bg-\[rgba\(0\,0\,0\,0\.5\)\] {
+    background-color: rgba(0,0,0,0.5);
+  }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -846,17 +849,6 @@
   .opacity-80 {
     opacity: 80%;
   }
-  .opacity-\[0\.6\] {
-    opacity: 0.6;
-  }
-  .shadow-lg {
-    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-md {
-    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -950,17 +942,17 @@
       }
     }
   }
-  .group-hover\:bg-\[\#80b918\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-color: #80b918;
-      }
-    }
-  }
   .group-hover\:bg-\[\#00401A\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         background-color: #00401A;
+      }
+    }
+  }
+  .group-hover\:bg-\[\#400026\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: #400026;
       }
     }
   }
@@ -978,10 +970,10 @@
       }
     }
   }
-  .group-hover\:text-\[\#80b918\] {
+  .group-hover\:text-\[\#400026\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
-        color: #80b918;
+        color: #400026;
       }
     }
   }
@@ -1041,6 +1033,13 @@
       }
     }
   }
+  .hover\:bg-\[\#400026\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #400026;
+      }
+    }
+  }
   .hover\:bg-black {
     &:hover {
       @media (hover: hover) {
@@ -1066,20 +1065,6 @@
     &:hover {
       @media (hover: hover) {
         color: #00401A;
-      }
-    }
-  }
-  .hover\:text-red-400 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-red-400);
-      }
-    }
-  }
-  .hover\:text-red-500 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-red-500);
       }
     }
   }
@@ -1495,61 +1480,6 @@ ul li > a:hover {
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
-}
-@property --tw-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-inset-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-inset-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ring-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ring-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-inset-ring-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-inset-ring-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-ring-inset {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ring-offset-width {
-  syntax: "<length>";
-  inherits: false;
-  initial-value: 0px;
-}
-@property --tw-ring-offset-color {
-  syntax: "*";
-  inherits: false;
-  initial-value: #fff;
-}
-@property --tw-ring-offset-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
 }
 @property --tw-duration {
   syntax: "*";
