@@ -25,17 +25,17 @@
       <div class="mx-auto px-4 md:px-2 lg:px-8 w-full container">
         <div class="flex md:flex-row flex-col justify-between lg:items-center gap-2 md:gap-4 h-full">
 
-          <div class="block lg:hidden w-full">
+          <div class="lg:hidden block w-full">
             <div class="flex items-center gap-2">
-              <a href="#" class=""><i class="fab fa-twitter text-sm"></i></a>
-              <a href="#" class=""><i class="fab fa-facebook text-sm"></i></a>
-              <a href="#" class=""><i class="fab fa-facebook text-sm"></i></a>
-              <input class="outline-none text-[10px] border-none h-full w-full " placeholder="Enter your keyword" type="text">
-              <i class="fa-solid fa-magnifying-glass text-sm"></i>
+              <a href="#" class=""><i class="text-sm fab fa-twitter"></i></a>
+              <a href="#" class=""><i class="text-sm fab fa-facebook"></i></a>
+              <a href="#" class=""><i class="text-sm fab fa-facebook"></i></a>
+              <input class="border-none outline-none w-full h-full text-[10px]" placeholder="Enter your keyword" type="text">
+              <i class="text-sm fa-solid fa-magnifying-glass"></i>
             </div>
           </div>
           <!-- Social Icons -->
-         <div class="lg:block hidden">
+         <div class="hidden lg:block">
           <div class="flex items-center gap-2 md:gap-4">
             <span class="text-[12px] md:text-[14px]">Follow Us:</span>
             <a href="#" class="mx-1 md:mx-2"><i class="fab fa-twitter"></i></a>
@@ -45,7 +45,7 @@
           </div>
          </div>
           <!-- Contact Info -->
-          <div class="lg:block hidden">
+          <div class="hidden lg:block">
             <div class="flex md:flex-row flex-col items-center gap-2 md:gap-4 text-[12px]">
               <div class="flex items-center gap-2">
                 <i class="text-white fas fa-phone-alt theme-clr"></i>
@@ -65,8 +65,8 @@
     
   
   <!-- Navbar Section -->
-  <div class="absolute top-[40px] md:top-[50px] right-0 left-0 z-10 bg-[rgba(0,0,0,0.4)] py-4 shadow-md">
-    <div class="mx-auto px-6 lg:px-12 flex justify-between items-center">
+  <div class="top-[40px] md:top-[50px] right-0 left-0 z-10 absolute bg-[rgba(0,0,0,0.4)] shadow-md py-4">
+    <div class="flex justify-between items-center mx-auto px-6 lg:px-12">
       <!-- Logo -->
       <div class="logo">
         <a href="index.html">
@@ -83,8 +83,8 @@
       <nav class="hidden md:flex">
         <ul class="flex gap-6 text-white">
           <li><a href="index.html" class="hover:text-red-400">Home</a></li>
-          <li class="relative group">
-            <a  class="cursor-pointer flex items-center gap-1">
+          <li class="group relative">
+            <a  class="flex items-center gap-1 cursor-pointer">
               Event
               <svg class="w-4 h-4 group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20" fill="currentColor">
@@ -94,7 +94,7 @@
               </svg>
             </a>
             <!-- Dropdown -->
-            <ul class="invisible group-hover:visible duration-500 mt-2 group-hover:opacity-100 opacity-0 absolute bg-white min-w-[180px] text-black transition-all  shadow-lg">
+            <ul class="invisible group-hover:visible absolute bg-white opacity-0 group-hover:opacity-100 shadow-lg mt-2 min-w-[180px] text-black transition-all duration-500">
               <li><a href="/event.html" class="block px-4 py-2 hover:text-[#00401A]">Upcoming Events</a></li>
               <li><a href="#" class="block px-4 py-2 hover:text-[#00401A]">Past Events</a></li>
               <li><a href="#" class="block hover:bg-gray-200 px-4 py-2">Event Gallery</a></li>
@@ -109,19 +109,19 @@
   </div>
 
   <!-- Sidebar (Mobile) -->
-  <div id="sidebar" class="fixed right-[-100%] top-0 w-64 h-full bg-black shadow-lg transition-all duration-300 z-20">
+  <div id="sidebar" class="top-0 right-[-100%] z-20 fixed bg-black shadow-lg w-64 h-full transition-all duration-300">
     <div class="flex justify-between items-center px-6 py-4 border-b">
-      <h2 class="text-lg font-semibold text-white">Menu</h2>
-      <button id="closeMenu" class="text-2xl text-white">&times;</button>
+      <h2 class="font-semibold text-white text-lg">Menu</h2>
+      <button id="closeMenu" class="text-white text-2xl">&times;</button>
     </div>
     <ul class="flex flex-col gap-4 p-6 text-white">
       <li><a href="index.html" class="block hover:text-red-500">Home</a></li>
       <li class="relative">
-        <button id="eventToggle" class="w-full text-left flex justify-between items-center text-white">
+        <button id="eventToggle" class="flex justify-between items-center w-full text-white text-left">
           Event
           <span id="eventArrow">▼</span>
         </button>
-        <ul id="eventDropdown" class="hidden text-whit pl-4 mt-2 border-l-2 border-gray-300">
+        <ul id="eventDropdown" class="hidden mt-2 pl-4 border-gray-300 border-l-2 text-whit">
           <li><a href="#" class="block py-1">Upcoming Events</a></li>
           <li><a href="#" class="block py-1">Past Events</a></li>
           <li><a href="#" class="block py-1">Event Gallery</a></li>
@@ -139,7 +139,7 @@
         <div class="relative swiper-slide">
           <img src="images/slide-4.jpg" class="w-full h-full object-cover" alt="Slide 1" />
           <div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-white text-center">
-            <div class="flex flex-col justify-center items-center mt-[280px] gap-4 w-full lg:max-w-[50%]">
+            <div class="flex flex-col justify-center items-center gap-4 mt-[280px] w-full lg:max-w-[50%]">
               <img src="images//bsml-txt.png" alt="" />
 
               <h1>
@@ -162,7 +162,7 @@
         <div class="relative swiper-slide">
           <img src="images/slide-4.jpg" class="w-full h-full object-cover" alt="Slide 1" />
           <div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-white text-center">
-            <div class="flex flex-col justify-center items-center mt-[280px] gap-4 w-full lg:max-w-[50%]">
+            <div class="flex flex-col justify-center items-center gap-4 mt-[280px] w-full lg:max-w-[50%]">
               <img src="images//bsml-txt.png" alt="" />
 
               <h1>
@@ -185,7 +185,7 @@
         <div class="relative swiper-slide">
           <img src="images/slide-4.jpg" class="w-full h-full object-cover" alt="Slide 1" />
           <div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-white text-center">
-            <div class="flex flex-col justify-center items-center mt-[280px] gap-4 w-full lg:max-w-[50%]">
+            <div class="flex flex-col justify-center items-center gap-4 mt-[280px] w-full lg:max-w-[50%]">
               <img src="images//bsml-txt.png" alt="" />
 
               <h1>
@@ -207,7 +207,7 @@
         <div class="relative swiper-slide">
           <img src="images/slide-4.jpg" class="w-full h-full object-cover" alt="Slide 1" />
           <div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-white text-center">
-            <div class="flex flex-col justify-center items-center mt-[280px] gap-4 w-full lg:max-w-[50%]">
+            <div class="flex flex-col justify-center items-center gap-4 mt-[280px] w-full lg:max-w-[50%]">
               <img src="images//bsml-txt.png" alt="" />
 
               <h1>
@@ -240,17 +240,17 @@
   <section>
     <!-- About Section -->
     <div class="py-[100px]">
-      <div class="mx-auto px-2 lg:px-8  container">
+      <div class="mx-auto px-2 lg:px-8 container">
         <div class="flex md:flex-row lg:flex-row flex-col items-center gap-5 mx-auto">
-          <div class="w-full flex-[50%]">
+          <div class="flex-[50%] w-full">
             <div class="relative inset-0 w-full lg:w-[510px] h-full lg:h-[390px]">
-              <div class="hidden lg:block absolute inset-0 border-[#00401A] border-[10px] top-8 -bottom-6 rounded-md"></div>
-              <div class="bottom-8 left-6 top-0 lg:absolute w-full lg:w-[510px] h-full lg:h-[390px]">
-                <img class="rounded-md h-full w-full object-cover" src="images//abt-img2.jpg" alt="" />
+              <div class="hidden lg:block top-8 -bottom-6 absolute inset-0 border-[#00401A] border-[10px] rounded-md"></div>
+              <div class="top-0 bottom-8 left-6 lg:absolute w-full lg:w-[510px] h-full lg:h-[390px]">
+                <img class="rounded-md w-full h-full object-cover" src="images//abt-img2.jpg" alt="" />
               </div>
             </div>
           </div>
-          <div class="flex flex-[50%] flex-col mt-6 lg:mt-0">
+          <div class="flex flex-col flex-[50%] mt-6 lg:mt-0">
             <h1 class="font-bold text-[#00401A] text-[20px]">Our History</h1>
             <div>
               <h2 class="font-[500] text-[#222] text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px]">
@@ -391,14 +391,14 @@
           </div>
           <div class="relative mt-4">
             <div
-              class="top-[-6px] right-0 left-0 absolute  bg-[#00401A] group-hover:bg-[#80b918] rounded-lg h-[40px] pt-[20px] pr-[25px] pb-[25px] -rotate-5 duration-600">
+              class="top-[-6px] right-0 left-0 absolute bg-[#00401A] group-hover:bg-[#80b918] pt-[20px] pr-[25px] pb-[25px] rounded-lg h-[40px] -rotate-5 duration-600">
             </div>
             <div
-            class="top-[-6px] right-0 left-0 absolute group-hover:invisible visible group-hover:z-10 bg-[#00401A] group-hover:bg-[#80b918] rounded-lg pt-[20px] pr-[25px] pb-[25px] -rotate-5 duration-600">
+            class="group-hover:invisible visible top-[-6px] right-0 left-0 group-hover:z-10 absolute bg-[#00401A] group-hover:bg-[#80b918] pt-[20px] pr-[25px] pb-[25px] rounded-lg -rotate-5 duration-600">
           </div>
       
             <div class="relative">
-              <p class="inset-0 pt-[20px] pr-[25px] pb-[25px] bg-[#00401A] group-hover:bg-[#80b918] mt-4 p-4 rounded-md text-white transition z-50 group-hover:z-50">
+              <p class="z-50 group-hover:z-50 inset-0 bg-[#00401A] group-hover:bg-[#80b918] mt-4 p-4 pt-[20px] pr-[25px] pb-[25px] rounded-md text-white transition">
                 <span class="text-white">Quran Teaching sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                   incididunt</span>
 
@@ -415,14 +415,14 @@
           </div>
           <div class="relative mt-4">
             <div
-              class="top-[-6px] right-0 left-0 absolute  bg-[#00401A] group-hover:bg-[#80b918] rounded-lg h-[40px] pt-[20px] pr-[25px] pb-[25px] -rotate-5 duration-600">
+              class="top-[-6px] right-0 left-0 absolute bg-[#00401A] group-hover:bg-[#80b918] pt-[20px] pr-[25px] pb-[25px] rounded-lg h-[40px] -rotate-5 duration-600">
             </div>
             <div
-            class="top-[-6px] right-0 left-0 absolute group-hover:invisible visible group-hover:z-10 bg-[#00401A] group-hover:bg-[#80b918] rounded-lg pt-[20px] pr-[25px] pb-[25px] -rotate-5 duration-600">
+            class="group-hover:invisible visible top-[-6px] right-0 left-0 group-hover:z-10 absolute bg-[#00401A] group-hover:bg-[#80b918] pt-[20px] pr-[25px] pb-[25px] rounded-lg -rotate-5 duration-600">
           </div>
       
             <div class="relative">
-              <p class="inset-0 pt-[20px] pr-[25px] pb-[25px] bg-[#00401A] group-hover:bg-[#80b918] mt-4 p-4 rounded-md text-white transition z-50 group-hover:z-50">
+              <p class="z-50 group-hover:z-50 inset-0 bg-[#00401A] group-hover:bg-[#80b918] mt-4 p-4 pt-[20px] pr-[25px] pb-[25px] rounded-md text-white transition">
                 <span class="text-white">Quran Teaching sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                   incididunt</span>
 
@@ -439,14 +439,14 @@
           </div>
           <div class="relative mt-4">
             <div
-              class="top-[-6px] right-0 left-0 absolute  bg-[#00401A] group-hover:bg-[#80b918] rounded-lg h-[40px] pt-[20px] pr-[25px] pb-[25px] -rotate-5 duration-600">
+              class="top-[-6px] right-0 left-0 absolute bg-[#00401A] group-hover:bg-[#80b918] pt-[20px] pr-[25px] pb-[25px] rounded-lg h-[40px] -rotate-5 duration-600">
             </div>
             <div
-            class="top-[-6px] right-0 left-0 absolute group-hover:invisible visible group-hover:z-10 bg-[#00401A] group-hover:bg-[#80b918] rounded-lg pt-[20px] pr-[25px] pb-[25px] -rotate-5 duration-600">
+            class="group-hover:invisible visible top-[-6px] right-0 left-0 group-hover:z-10 absolute bg-[#00401A] group-hover:bg-[#80b918] pt-[20px] pr-[25px] pb-[25px] rounded-lg -rotate-5 duration-600">
           </div>
       
             <div class="relative">
-              <p class="inset-0 pt-[20px] pr-[25px] pb-[25px] bg-[#00401A] group-hover:bg-[#80b918] mt-4 p-4 rounded-md text-white transition z-50 group-hover:z-50">
+              <p class="z-50 group-hover:z-50 inset-0 bg-[#00401A] group-hover:bg-[#80b918] mt-4 p-4 pt-[20px] pr-[25px] pb-[25px] rounded-md text-white transition">
                 <span class="text-white">Quran Teaching sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                   incididunt</span>
 
@@ -463,14 +463,14 @@
           </div>
           <div class="relative mt-4">
             <div
-              class="top-[-6px] right-0 left-0 absolute  bg-[#00401A] group-hover:bg-[#80b918] rounded-lg h-[40px] pt-[20px] pr-[25px] pb-[25px] -rotate-5 duration-600">
+              class="top-[-6px] right-0 left-0 absolute bg-[#00401A] group-hover:bg-[#80b918] pt-[20px] pr-[25px] pb-[25px] rounded-lg h-[40px] -rotate-5 duration-600">
             </div>
             <div
-            class="top-[-6px] right-0 left-0 absolute group-hover:invisible visible group-hover:z-10 bg-[#00401A] group-hover:bg-[#80b918] rounded-lg pt-[20px] pr-[25px] pb-[25px] -rotate-5 duration-600">
+            class="group-hover:invisible visible top-[-6px] right-0 left-0 group-hover:z-10 absolute bg-[#00401A] group-hover:bg-[#80b918] pt-[20px] pr-[25px] pb-[25px] rounded-lg -rotate-5 duration-600">
           </div>
       
             <div class="relative">
-              <p class="inset-0 pt-[20px] pr-[25px] pb-[25px] bg-[#00401A] group-hover:bg-[#80b918] mt-4 p-4 rounded-md text-white transition z-50 group-hover:z-50">
+              <p class="z-50 group-hover:z-50 inset-0 bg-[#00401A] group-hover:bg-[#80b918] mt-4 p-4 pt-[20px] pr-[25px] pb-[25px] rounded-md text-white transition">
                 <span class="text-white">Quran Teaching sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                   incididunt</span>
 
@@ -492,7 +492,7 @@
       <div class="z-10 relative mx-auto px-2 lg:px-8 container">
         <div class="flex flex-col items-center">
           <span class="font-bold text-[#80b918] text-[20px]">About Essential</span>
-          <h2 class="font-semibold  text-white text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px]">Pillar Of Islam</h2>
+          <h2 class="font-semibold text-[28px] text-white sm:text-[38px] md:text-[42px] lg:text-[48px]">Pillar Of Islam</h2>
           <img class="mt-2" src="images/pshape.png" alt="Design Shape" />
         </div>
 
@@ -710,10 +710,10 @@
             <div class="text-white swiper-button-next"></div>
           </div>
         </div>
-        <div class="z-10 mx-auto px-2  py-10 text-white container">
+        <div class="z-10 mx-auto px-2 py-10 text-white container">
           <div class="flex flex-wrap gap-6">
             <!-- Left Section: Donation Info -->
-            <div class="w-full ">
+            <div class="w-full">
               <span class="font-bold text-[#00401A] text-[20px]">Give Food & Shelter To Poor</span>
               <h2 class="mt-2 font-semibold text-[#222] text-[28px] sm:text-[38px] md:text-[42px] lg:text-[48px]">Make Your Donation</h2>
               <img class="mt-4" src="images/pshape.png" alt="Design Shape" />
@@ -730,15 +730,15 @@
             </div>
 
             <!-- Right Section: Form -->
-            <div class="w-full px-2 lg:px-0 lg:w-[80%] 2xl:w-[55%] ">
+            <div class="px-2 lg:px-0 w-full lg:w-[80%] 2xl:w-[55%]">
               <div>
-                <div class='flex mb-4 gap-4 flex-col md:flex-row'>
+                <div class='flex md:flex-row flex-col gap-4 mb-4'>
                   <input type="text" placeholder="Enter your name"
                     class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none w-full text-[#222] text-[14px] transition-all duration-300">
                   <input type="text" placeholder="Enter your email"
-                    class="px-4 py-2  border border-gray-300 rounded-lg focus:outline-none w-full text-[#222] text-[14px] transition-all duration-300">
+                    class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none w-full text-[#222] text-[14px] transition-all duration-300">
                 </div>
-                <div class="flex gap-4 flex-col md:flex-row">
+                <div class="flex md:flex-row flex-col gap-4">
                   <input type="text" placeholder="Donation Amount"
                     class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none w-full text-[#222] text-[14px] transition-all duration-300">
                   <input type="text" placeholder="Message"
@@ -881,12 +881,12 @@
   </section>
 
 <section>
-    <footer class=" p-footer">
+    <footer class="p-footer">
       <div class="bg-[#f8f9fa] w-full h-full">
         
         <div>
           <div class="relative bg-[#00401A] py-[270px] pb-[50px]">
-            <img class="absolute -z-10 -top-68 opacity-[0.6] hidden lg:block" src="images/bg-vector.png" alt="" />
+            <img class="hidden lg:block -top-68 -z-10 absolute opacity-[0.6]" src="images/bg-vector.png" alt="" />
             <div class="lg:-top-44 right-0 bottom-0 left-0 absolute mx-auto px-4 container">
               <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white px-8 py-10 rounded-lg">
                 <!-- About Us Section -->
@@ -980,7 +980,7 @@
           <div class="bg-[#00401A] py-5">
             <div class="mx-auto px-8 container">
               <div class="flex lg:flex-row flex-col justify-center gap-4 icons">
-                <h4 class=" flex-1 text-[24px] text-white text-center lg:text-start">
+                <h4 class="flex-1 text-[24px] text-white text-center lg:text-start">
                   Subscribe, For Weekly Updates
                 </h4>
                 <form action="" class="flex-1 lg:flex-auto">
@@ -990,12 +990,12 @@
                       class="bg-white px-[45px] py-[10px] border border-white rounded-full focus:outline-none w-full" />
                     <button
                     type="submit"
-                      class="top-0 btn-hidden right-0 bottom-0 absolute bg-[#5d2b00] hover:bg-black ml-2 px-[45px] py-[10px] rounded-full text-white uppercase tracking-tighter transition">
+                      class="btn-hidden top-0 right-0 bottom-0 absolute bg-[#5d2b00] hover:bg-black ml-2 px-[45px] py-[10px] rounded-full text-white uppercase tracking-tighter transition">
                       SIGN UP
                     </button>
                     <button
                     type="submit"
-                    class=" bg-[#5d2b00] btn-visible hover:bg-black mt-2 w-full py-[10px] rounded-full text-white uppercase tracking-tighter transition">
+                    class="btn-visible bg-[#5d2b00] hover:bg-black mt-2 py-[10px] rounded-full w-full text-white uppercase tracking-tighter transition">
                     SIGN UP
                   </button>
                   </div>
