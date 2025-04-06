@@ -11,7 +11,6 @@
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-300: oklch(0.872 0.01 258.338);
     --color-gray-600: oklch(0.446 0.03 256.802);
-    --color-gray-800: oklch(0.278 0.033 256.848);
     --color-gray-900: oklch(0.21 0.034 264.665);
     --color-black: #000;
     --color-white: #fff;
@@ -22,8 +21,6 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
-    --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -215,9 +212,6 @@
   .top-\[38px\] {
     top: 38px;
   }
-  .top-\[40px\] {
-    top: 40px;
-  }
   .-right-5 {
     right: calc(var(--spacing) * -5);
   }
@@ -250,9 +244,6 @@
   }
   .z-10 {
     z-index: 10;
-  }
-  .z-20 {
-    z-index: 20;
   }
   .z-30 {
     z-index: 30;
@@ -289,9 +280,6 @@
     @media (width >= 96rem) {
       max-width: 96rem;
     }
-  }
-  .mx-1 {
-    margin-inline: calc(var(--spacing) * 1);
   }
   .mx-\[10px\] {
     margin-inline: 10px;
@@ -433,9 +421,6 @@
   }
   .h-4 {
     height: calc(var(--spacing) * 4);
-  }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
@@ -681,9 +666,6 @@
   .bg-\[rgb\(61\,61\,61\)\] {
     background-color: rgb(61,61,61);
   }
-  .bg-\[rgba\(0\,0\,0\,0\.4\)\] {
-    background-color: rgba(0,0,0,0.4);
-  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -692,9 +674,6 @@
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
-  }
-  .bg-gray-800 {
-    background-color: var(--color-gray-800);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -855,10 +834,6 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -1347,11 +1322,6 @@
       font-size: 38px;
     }
   }
-  .md\:top-\[50px\] {
-    @media (width >= 48rem) {
-      top: 50px;
-    }
-  }
   .md\:col-span-2 {
     @media (width >= 48rem) {
       grid-column: span 2 / span 2;
@@ -1360,11 +1330,6 @@
   .md\:col-span-3 {
     @media (width >= 48rem) {
       grid-column: span 3 / span 3;
-    }
-  }
-  .md\:mx-2 {
-    @media (width >= 48rem) {
-      margin-inline: calc(var(--spacing) * 2);
     }
   }
   .md\:mt-0 {
@@ -1385,16 +1350,6 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
-    }
-  }
-  .md\:h-16 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 16);
-    }
-  }
-  .md\:h-\[50px\] {
-    @media (width >= 48rem) {
-      height: 50px;
     }
   }
   .md\:grid-cols-2 {
@@ -1427,16 +1382,6 @@
       gap: calc(var(--spacing) * 4);
     }
   }
-  .md\:p-0 {
-    @media (width >= 48rem) {
-      padding: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:px-2 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 2);
-    }
-  }
   .md\:px-6 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 6);
@@ -1445,11 +1390,6 @@
   .md\:py-4 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 4);
-    }
-  }
-  .md\:text-\[14px\] {
-    @media (width >= 48rem) {
-      font-size: 14px;
     }
   }
   .md\:text-\[42px\] {
@@ -1587,11 +1527,6 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
-  .lg\:px-12 {
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 12);
-    }
-  }
   .lg\:py-\[15px\] {
     @media (width >= 64rem) {
       padding-block: 15px;
@@ -1712,12 +1647,12 @@ ul li > a:hover {
     grid-template-columns: 1fr;
   }
 }
-@media (min-width:1031px) {
+@media (min-width: 1031px) {
   .icon-hidden {
     display: block;
   }
 }
-@media (max-width:1030px) {
+@media (max-width: 1030px) {
   .icon-hidden {
     display: none;
   }
@@ -1773,15 +1708,16 @@ ul li > a:hover {
     display: none;
   }
 }
-.container {
-  width: 100%;
-  padding-right: 15px !important;
-  padding-left: 15px !important;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  max-width: 1170px !important;
+@media (max-width: 1030px) {
+  .container {
+    max-width: 100%;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
 }
-@media (min-width: 1024) {
+@media (min-width: 1031px) {
   .container {
     width: 100% !important;
     padding-right: 0px !important;
