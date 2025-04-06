@@ -79,8 +79,8 @@
       </div>
 
       <!-- Hamburger Menu Button (Mobile) -->
-      <button id="menuToggle" class="md:hidden text-white text-2xl">
-        ☰
+      <button id="menuToggle" class="md:hidden text-white text-2xl h-[40px] w-[40px] flex justify-center items-center hover:bg-[#00401A] duration-700 leading-[40px] bg-[#80b918] ">
+        <i class="fa fa-list-ul font-[900] text-[13px]"></i>
       </button>
 
       <!-- Navigation (Desktop) -->
@@ -115,9 +115,8 @@
 
   <!-- Sidebar (Mobile) -->
   <div id="sidebar" class="fixed right-[-100%] top-0 w-64 h-full bg-black shadow-lg transition-all duration-300 z-50">
-    <div class="flex justify-between items-center px-6 py-4 border-b">
-      <h2 class="text-lg font-semibold text-white">Menu</h2>
-      <button id="closeMenu" class="text-2xl text-white">&times;</button>
+    <div class="flex justify-end items-center px-6 py-4 border-b">
+      <button id="closeMenu" class="text-2xl text-white ml-auto duration-700 h-[40px] w-[40px] hover:bg-[#6a994e] bg-[#303030] flex items-center justify-center text-center"><i class="fa fa-times font-[900] text-[13px] text-white"></i></button>
     </div>
     <ul class="flex flex-col gap-4 p-6 text-white">
       <li><a href="index.html" class="block hover:text-red-500">Home</a></li>
