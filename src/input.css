@@ -8,6 +8,8 @@ body {
   font-family: "Merriweather", serif;
   background-color: #f8f9fa;
   width: 100%;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 p {
@@ -15,7 +17,9 @@ p {
   color: #555;
   line-height: 28px;
 }
-
+h1, h2, h3, h4, h5, h6{
+  line-height: 1.2;
+}
 @media (max-width: 770px) {
   .swipper-next-btn,
   .swipper-prev-btn {
@@ -59,10 +63,22 @@ p {
 .swiper-button-prev:hover {
   background-color: var(--secondary-clr) !important;
 }
-.swiper-button-prev:after,
+
 .swiper-button-next:after {
-  font-size: 12px !important;
-  color: #ffffff;
+
+  font-family: swiper-icons !important;
+  font-size: 10px !important;
+  color: #ffffff !important;
+  line-height: 60px !important;
+transform: rotate(180deg);
+}
+.swiper-button-prev:after {
+ 
+  font-family: swiper-icons !important;
+  font-size: 10px !important;
+  color: #ffffff !important;
+  transform: rotate(180deg);
+
 }
 
 ul li > a:hover {
@@ -142,8 +158,8 @@ ul li > a:hover {
   }
 }
 
-@media (min-width: 1080px)  {
-  .p-footer{
+@media (min-width: 1080px) {
+  .p-footer {
     padding-top: 15rem;
   }
 }
@@ -152,19 +168,62 @@ ul li > a:hover {
 
 /* end of footer */
 @media (min-width: 0px) and (max-width: 484px) {
-  .btn-hidden{
+  .btn-hidden {
     display: none;
   }
-  .btn-visible{
+  .btn-visible {
     display: block;
   }
 }
 
 @media (min-width: 485px) {
-  .btn-hidden{
+  .btn-hidden {
     display: block;
   }
-  .btn-visible{
+  .btn-visible {
     display: none;
   }
 }
+
+.container {
+  width: 100%;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  max-width: 1170px !important;
+}
+
+@media (max-width: 1030px) {
+  .hidden-border {
+    display: none;
+  }
+}
+@media (min-width: 1031px) {
+  .hidden-border {
+    display: block;
+  }
+}
+
+/* blog  */
+@media (max-width: 480px) {
+  .blog-flex {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .date-flex {
+    flex-direction: column;
+    align-items: start;
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .date-flex2 {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px
+  }
+}
+/* blog  */
